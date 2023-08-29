@@ -21,36 +21,49 @@ export default function About() {
 
     function skillsText() {
         return <>
-            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills/tools
+            <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
+                programming-lenguages/tools
             </p>
-            <p><span style={{color: info.baseColor}}>skills/tools <span
+            <p><span style={{color: info.baseColor}}>lenguages/tools <span
                 className={Style.green}>(main)</span> $</span> ls</p>
 
-            <p style={{color: info.baseColor}}> Proficient With</p>
-            <ul className={Style.skills}>
-                {info.skills.proficientWith.map((proficiency, index) => (
-                    <li key={index}>
-                        <div className="table-row">
-                            <div className="table-cell">{proficiency}</div>
-                        </div>
-                    </li>
+            <table className={Style.skills}>
+                <thead>
+                <tr>
+                    <th className={Style.columnHeader} style={{color: info.baseColor}}>Proficient With</th>
+                    <th className={Style.columnHeader} style={{color: info.baseColor}}>Tools</th>
+                    <th className={Style.columnHeader} style={{color: info.baseColor}}>Exposed To</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                {info.knowledge.map((entry, index) => (
+                    <tr key={index}>
+                        <td className={Style.column}>
+                            <ul>
+                                {entry.proficientWith.map((proficientWith, toolIndex) => (
+                                    <li key={toolIndex}>{proficientWith}</li>
+                                ))}
+                            </ul>
+                        </td>
+                        <td className={Style.column}>
+                            <ul>
+                                {entry.tools.map((tools, exposeIndex) => (
+                                    <li key={exposeIndex}>{tools}</li>
+                                ))}
+                            </ul>
+                        </td>
+                        <td className={Style.column}>
+                            <ul>
+                                {entry.exposedTo.map((exposeTo, exposeIndex) => (
+                                    <li key={exposeIndex}>{exposeTo}</li>
+                                ))}
+                            </ul>
+                        </td>
+                    </tr>
                 ))}
-            </ul>
-
-            Hier geht man davon aus, dass proficiencies ein Array von Fähigkeiten ist, jede mit einer skillName und
-            einem level. Sie würden Ihre Daten entsprechend einfügen.
-
-            Styling (z.B. CSS) wird benötigt, um die Zeilen und Zellen in der Tabelle zu gestalten. Sie könnten
-            beispielsweise die Klasse table-row und table-cell verwenden, um die Elemente entsprechend zu formatieren.
-
-            <p style={{color: info.baseColor}}> Exposed To</p>
-            <ul className={Style.skills}>
-                {info.skills.exposedTo.map((skill, index) => <li key={index}>{skill}</li>)}
-            </ul>
-            <p style={{color: info.baseColor}}> Tools</p>
-            <ul className={Style.skills}>
-                {info.skills.tools.map((skill, index) => <li key={index}>{skill}</li>)}
-            </ul>
+                </tbody>
+            </table>
         </>;
     }
 
@@ -60,11 +73,46 @@ export default function About() {
                 hobbies/interests</p>
             <p><span style={{color: info.baseColor}}>hobbies/interests <span
                 className={Style.green}>(main)</span> $</span> ls</p>
-            <ul>
-                {info.hobbies.map((hobby, index) => (
-                    <li key={index}><Box component={'span'} mr={'1rem'}>{hobby.emoji}</Box>{hobby.label}</li>
-                ))}
-            </ul>
+
+            <div className={Style.tablesContainer}>
+                <div className={Style.tableWrapper}>
+                    <h2>Hobbies</h2>
+                    <table>
+                        <tbody>
+                        {info.hobbies.map((hobby, index) => (
+                            <tr key={index}>
+                                <td>{`${hobby.emoji} ${hobby.label}`}</td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </table>
+                </div>
+
+                <div className={Style.tableWrapper}>
+                    <h2>Skills</h2>
+                    <table>
+                        <tbody>
+                        {info.skills.map((skill, index) => (
+                            <tr key={index}>
+                                <td>{`${skill.emoji} ${skill.label}`}</td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </table>
+                </div>
+                <div className={Style.tableWrapper}>
+                    <h2>Interests</h2>
+                    <table>
+                        <tbody>
+                        {info.interest.map((skill, index) => (
+                            <tr key={index}>
+                                <td>{`${skill.emoji} ${skill.label}`}</td>
+                            </tr>
+                        ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </>;
     }
 

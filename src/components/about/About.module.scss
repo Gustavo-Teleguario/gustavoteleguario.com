@@ -7,15 +7,43 @@
 .green {
   color: $green;
 }
-
 .skills {
-  columns: 1;
-  @media only screen and (min-width: 940px) {
-    columns: 2;
-  }
+  border-collapse: collapse; /* Grenzen der Zellen zusammenführen */
+  width: 100%;
+}
 
-  li {
-    margin: 0;
-    line-height: 1.75;
-  }
+.columnHeader,
+.column {
+  border: 1px solid white; /* Rahmen um die Zellen hinzufügen */
+  padding: 8px; /* Abstand innerhalb der Zellen anpassen */
+  text-align: center; /* Text zentrieren */
+}
+
+.columnHeader {
+  background-color: #333; /* Hintergrundfarbe für den Header */
+  color: white;
+}
+
+.hobbiesTable {
+  border-collapse: collapse;
+  width: 20%;
+}
+.columnHobie{
+
+  padding: 8px; /* Abstand innerhalb der Zellen anpassen */
+  text-align: center; /* Text zentrieren */
+  color: white;
+}
+
+/* In Style.module.css */
+.tablesContainer {
+  display: flex; /* Flexbox verwenden */
+  color: white;
+  padding: 8px;
+}
+
+.tableWrapper {
+  flex: 1; /* Gleiche Breite für beide Tabellen */
+  margin: 10px; /* Abstand zwischen den Tabellen */
+  padding: 8px;
 }
