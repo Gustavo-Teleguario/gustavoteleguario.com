@@ -16,12 +16,13 @@ const links = [
         to: '/about',
         active: 'about'
     },
-    {
+    /*{
         name: info.initials,
         type: 'initials',
         to: '/',
         active: 'home'
-    },
+    },*/
+
     {
         name: 'Portfolio',
         to: '/portfolio',
@@ -39,7 +40,9 @@ export default function Navbar({darkMode, handleClick}) {
                  gap={{xs: '2rem', md: '8rem'}}
                  textTransform={'lowercase'} fontSize={'1rem'}>
                 {links.map((link, index) => (
-                    <Box key={index} component={'li'} className={(link.active === active && !link.type) && Style.active}
+                    <Box key={index} component={'li'}
+                         className={`${(link.active === active && !link.type) && Style.active}
+                          ${link.active === active && !link.type ? Style.largeFont : ''} ${link.active === active && !link.type ? Style.floatingText : ''}`}
                          sx={{borderImageSource: info.gradient}}>
                         <Link to={link.to} onClick={() => setActive(link.active)} className={Style.link}>
                             {!link.type && <p style={{padding: '0.5rem 0'}}>{link.name}</p>}

@@ -28,7 +28,7 @@ of what each of the values mean.
 export const info = {
     firstName: "Maynor",
     lastName: "Teleguario",
-    initials: "Home", // the example uses first and last, but feel free to use three or more if you like.
+    initials: "js", // the example uses first and last, but feel free to use three or more if you like.
     position: "Computer Scientist",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
@@ -53,7 +53,7 @@ export const info = {
     ],
     socials: [
         {
-            link: "https://drive.google.com/file/d/12hRdJVFpxfEtYAipKuClPwxxy9-Myq57/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1jTZrhm-2rS8lG0cX2h8A_5n47o8-Uxgo/view?usp=sharing",
             icon: 'fa fa-file-pdf-o',
             label: 'CV'
         },
@@ -120,6 +120,10 @@ export const info = {
             label: 'swimming',
             emoji: '🏊'
         },
+        {
+            label: 'Bicycle',
+            emoji: '🚴'
+        },
 
         {
             label: 'guitar',
@@ -165,14 +169,27 @@ export const info = {
             emoji: '📚'
         },
         {
-            label: 'Universe',
-            emoji: '🌌'
-        },
-
-        {
             label: 'Technology',
             emoji: '🤖'
         },
+        {
+            label: 'Health',
+            emoji: '🧬'
+        },
+        {
+            label: 'Universe',
+            emoji: '🌌'
+        },
+        {
+            label: 'Nature',
+            emoji: '🌴'
+        },
+
+        {
+            label: 'Animals',
+            emoji: '🐢'
+        },
+
         {
             label: 'Languages',
             emoji: '🗣️'

@@ -6,7 +6,7 @@ function PortfolioBlock(props) {
     /** image kann man hier setzen, wenn man es wieder braucht.*/
     const { video, live, source, title} = props;
     return (
-        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} marginTop={'5rem'}>
             <video controls width="400" height="auto">
                 <source component={'vid'} src={video} type="video/mp4"/>
             </video>
