@@ -1,9 +1,5 @@
 import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
+
 
 
 import React from "react";
@@ -59,30 +55,29 @@ export const info = {
             label: 'CV'
         },
         {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
-            link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
-        {
-            link: "https://github.com",
+            link: "https://github.com/Gustavo-Teleguario",
             icon: "fa fa-github",
             label: 'github'
         },
         {
-            link: "https://linkedin.com",
+            link: "https://www.linkedin.com/in/maynor-gustavo-teleguario-queche-b649ab1a8/",
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
         {
-            link: "https://twitter.com",
-            icon: "fa fa-twitter",
-            label: 'twitter'
-        }
+            link: "https://www.xing.com/profile/MaynorGustavo_TeleguarioQueche/cv",
+            icon: 'fa fa-xing',
+            label: 'instagram'
+        },
+        {
+            link: "https://gitlab.com/Gustavo-Teleguario",
+            icon: 'fa fa-gitlab',
+            label: 'facebook'
+        },
+
+
+
+
 // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
 // Just change the links so that they lead to your social profiles.
 
@@ -212,41 +207,20 @@ export const info = {
 
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1,
-            video: require('../vid/GS-video.mp4')
+            title: "Chapines en Wacken 2010",
+            //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://www.youtube.com/@junkaiushi/videos", // this should be a link to the **repository** of the project, where the code is hosted.
+
+            videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD"
+
 
         },
         {
-            title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock2,
-            video: require('../vid/IMW-video.mp4')
+            title: "Metal Avengar Kassel",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://www.youtube.com/@junkaiushi/videos",
+            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1"
         },
-        {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock3,
-            video: require('../vid/Fapp-video.mp4')
-        },
-        {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock4,
-            video: require('../vid/LeanIX-video.mp4')
-        },
-        {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5,
-            video: require('../vid/demostrator.mp4')
 
-        }
     ]
 }
