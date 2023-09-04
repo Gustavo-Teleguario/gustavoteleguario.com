@@ -1,14 +1,13 @@
 import self from "../img/self.png"
 
 
-
 import React from "react";
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
 
 //export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
-export let colors = [ "#FFFFFF","#0c7ded"];
+export let colors = ["#FFFFFF", "#0c7ded"];
 /*
 I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
 These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
@@ -74,8 +73,6 @@ export const info = {
             icon: 'fa fa-gitlab',
             label: 'facebook'
         },
-
-
 
 
 // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
@@ -210,8 +207,10 @@ export const info = {
             title: "Chapines en Wacken 2010",
             //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://www.youtube.com/@junkaiushi/videos", // this should be a link to the **repository** of the project, where the code is hosted.
+            videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD",
 
-            videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD"
+            image: "https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg",
+            hRef: "https://unrealengine.com/"
 
 
         },
@@ -219,8 +218,11 @@ export const info = {
             title: "Metal Avengar Kassel",
             //live: "https://github.com/Gustavo-Teleguario",
             source: "https://www.youtube.com/@junkaiushi/videos",
-            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1"
-        },
+            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
 
-    ]
+            image: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
+            hRef: "https://unity.com/"
+
+        },
+    ],
 }
