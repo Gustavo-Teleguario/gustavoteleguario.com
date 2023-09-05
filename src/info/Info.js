@@ -98,7 +98,7 @@ export const info = {
     knowledge: [{
         proficientWith: ['Java', 'Javascript', 'Python', 'C#', 'C++', 'SQL', 'ABAP', 'Go'],
         exposedTo: ['Angular', 'Nodejs', 'Oracle', 'MongoDB', 'AI'],
-        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unity', 'Microsoft Office'],
+        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unity', 'SAPUI5', 'Microsoft Office'],
         frameworks: ['Vue.js', 'React']
 
     }]
@@ -222,6 +222,17 @@ export const info = {
 
             image: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
             hRef: "https://unity.com/"
+
+        },
+        {
+            title: "Projekt mit JAVA",
+            //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://www.youtube.com/@junkaiushi/videos", // this should be a link to the **repository** of the project, where the code is hosted.
+            videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD",
+
+            image: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+            hRef: "https://www.java.com/de/"
+
 
         },
     ],
