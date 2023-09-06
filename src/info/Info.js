@@ -235,5 +235,15 @@ export const info = {
 
 
         },
+        {
+            title: "Metal Avengar Kassel",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://www.youtube.com/@junkaiushi/videos",
+            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+
+            image: "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg",
+            hRef: "https://vuejs.org/"
+
+        },
     ],
 }

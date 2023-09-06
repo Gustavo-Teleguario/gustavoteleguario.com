@@ -1,15 +1,13 @@
 import React from 'react';
-import IconLink from "./IconLink";
+import AspectRatio from '@mui/joy/AspectRatio';
+import Button from '@mui/joy/Button';
+import Card from '@mui/joy/Card';
+import CardContent from '@mui/joy/CardContent';
+import CardOverflow from '@mui/joy/CardOverflow';
+import Typography from '@mui/joy/Typography';
 import {Box} from "@mui/material";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-
-import Typography from '@mui/material/Typography';
-
+import {CardActions} from "@mui/joy";
+import IconLink from "./IconLink";
 
 
 function PortfolioBlock(props) {
@@ -17,17 +15,22 @@ function PortfolioBlock(props) {
     /** image kann man hier setzen, wenn man es wieder braucht.*/
     const {videoLink, source, title, image, href} = props;
     return (
-        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-            <Card sx={{ maxWidth: 345, justifyContent: 'center'}}  >
-                <CardMedia sx={{ height: 140 }}>
-                    <div className="ratio ratio-21x9">
+        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}
+             marginTop={'5em'}>
+            <Card variant="solid"
+                  color="neutral"
+                  invertedColors={false} sx={{width: 645, maxWidth: '100%', boxShadow: 'lg'}}>
+                <CardOverflow>
+                    <AspectRatio  variant="outlined"
+                                  ratio="4/3" sx={{minWidth: 350}}>
                         <iframe
                             src={videoLink}
                             title="YouTube video"
                             allowFullScreen
                         ></iframe>
-                    </div>
-                </CardMedia>
+
+                    </AspectRatio>
+                </CardOverflow>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
 
@@ -46,14 +49,16 @@ function PortfolioBlock(props) {
                     <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
                          alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
 
-                        <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
+                        <Button color="primary"
+                                variant="outlined"
+                                size="lg"
+                        >
                             <IconLink link={source} title={'Source Code'} icon={'fa fa-code'}/>
-                        </Box>
+                        </Button>
                     </Box>
                 </CardActions>
             </Card>
         </Box>
-
     );
 }
 
