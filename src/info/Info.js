@@ -204,12 +204,13 @@ export const info = {
 
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "Dosisleitungsmessgerät mit Teletector",
+            title: "Dose rate meter with Teletector",
             //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://www.youtube.com/@junkaiushi/videos", // this should be a link to the **repository** of the project, where the code is hosted.
-            videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD",
+            //videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD",
             image: "https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg",
-            hRef: "https://unrealengine.com/"
+            hRef: "https://unrealengine.com/",
+            bio: <p>This is a small Biography about my Simulation made with Unreal Engine und Blue Blueprints.</p>,
 
 
         },
@@ -217,52 +218,58 @@ export const info = {
             title: "Feuerwehrquiz",
             //live: "https://github.com/Gustavo-Teleguario",
             source: "https://www.youtube.com/@junkaiushi/videos",
-            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+           // videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
             image: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
-            hRef: "https://unity.com/"
+            hRef: "https://unity.com/",
+            bio: <p>This is a small Biography about my Quiz App made with Unity and C#</p>,
 
         },
         {
             title: "Context Awarenes -Fitness App",
             //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
             source: "https://www.youtube.com/@junkaiushi/videos", // this should be a link to the **repository** of the project, where the code is hosted.
-            videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD",
+            //videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD",
             image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg",
-            hRef: "https://www.android.com/intl/de_de/"
+            hRef: "https://www.android.com/intl/de_de/",
+            bio: <p>This is a small Biography about my Fitness App made with Android Studio and Java</p>,
 
         },
         {
             title: "Custom Report LeanIX",
             //live: "https://github.com/Gustavo-Teleguario",
             source: "https://www.youtube.com/@junkaiushi/videos",
-            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+            //videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
             image: "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg",
-            hRef: "https://vuejs.org/"
+            hRef: "https://vuejs.org/",
+            bio: <p>This is a small Biography about my Custom Report made with the Framework Vue.js and JavaScrip</p>,
 
         },
         {
             title: "Software Engineering I",
             //live: "https://github.com/Gustavo-Teleguario",
             source: "https://www.youtube.com/@junkaiushi/videos",
-            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+           // videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
             image: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
-            hRef: "https://www.java.com/de/"
+            hRef: "https://www.java.com/de/",
+            bio: <p>This is a small Biography about a small Program made with Java</p>,
         },
         {
             title: "My own Portfolio",
             //live: "https://github.com/Gustavo-Teleguario",
             source: "https://www.youtube.com/@junkaiushi/videos",
-            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+          //  videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
             image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-            hRef: "https://react.dev/"
+            hRef: "https://react.dev/",
+            bio: <p>This is a small Biography about my Own Portfolio made with the Framework React and JavaScrip</p>,
         },
         {
             title: "3D Interior eines Notarzwagen",
             //live: "https://github.com/Gustavo-Teleguario",
             source: "https://www.youtube.com/@junkaiushi/videos",
-            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+           // videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
             image: "https://download.blender.org/branding/community/blender_community_badge_white.svg",
-            hRef: "https://www.blender.org/"
+            hRef: "https://www.blender.org/",
+            bio: <p>This is a small Biography about a 3D-Model made with the Blender</p>,
         },
     ],
 }

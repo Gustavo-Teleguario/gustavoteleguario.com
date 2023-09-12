@@ -13,7 +13,7 @@ import IconLink from "./IconLink";
 function PortfolioBlock(props) {
 
     /** image kann man hier setzen, wenn man es wieder braucht.*/
-    const {videoLink, source, title, image, href} = props;
+    const {videoLink, source, title, image, href,text} = props;
     return (
         <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}
              marginTop={'5em'}>
@@ -33,7 +33,6 @@ function PortfolioBlock(props) {
                 </CardOverflow>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-
                         <a href={href} target="_blank" rel="noreferrer">
                             <img src={image} alt="unity" width="80" height="80"/>
                         </a>
@@ -41,7 +40,7 @@ function PortfolioBlock(props) {
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         <h1 style={{fontSize: '2rem'}}>{title}</h1>
-
+                        <Typography>{text}</Typography>
                     </Typography>
                 </CardContent>
                 <CardActions>
