@@ -1,26 +1,61 @@
 import React from 'react';
-import IconLink from "./IconLink";
+import AspectRatio from '@mui/joy/AspectRatio';
+import Button from '@mui/joy/Button';
+import Card from '@mui/joy/Card';
+import CardContent from '@mui/joy/CardContent';
+import CardOverflow from '@mui/joy/CardOverflow';
+import Typography from '@mui/joy/Typography';
 import {Box} from "@mui/material";
+import {CardActions} from "@mui/joy";
+import IconLink from "./IconLink";
+
 
 function PortfolioBlock(props) {
+
     /** image kann man hier setzen, wenn man es wieder braucht.*/
-    const { video, live, source, title} = props;
+    const {videoLink, source, title, image, href,text} = props;
     return (
-        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} marginTop={'5rem'}>
-            <video controls width="400" height="auto">
-                <source component={'vid'} src={video} type="video/mp4"/>
-            </video>
-            {/*<Box component={'img'} src={image} alt={'mockup'}/> */}
-            <h1 style={{fontSize: '2rem'}}>{title}</h1>
-            <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
-                 alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
-                <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
-                    <IconLink link={live} title={'Live Demo'} icon={'fa fa-safari'}/>
-                </Box>
-                <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
-                    <IconLink link={source} title={'Source Code'} icon={'fa fa-code'}/>
-                </Box>
-            </Box>
+        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}
+             marginTop={'5em'}>
+            <Card variant="solid"
+                  color="neutral"
+                  invertedColors={false} sx={{width: 645, maxWidth: '100%', boxShadow: 'lg'}}>
+                <CardOverflow>
+                    <AspectRatio  variant="outlined"
+                                  ratio="4/3" sx={{minWidth: 350}}>
+                        <iframe
+                            src={videoLink}
+                            title="YouTube video"
+                            allowFullScreen
+                        ></iframe>
+
+                    </AspectRatio>
+                </CardOverflow>
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div">
+                        <a href={href} target="_blank" rel="noreferrer">
+                            <img src={image} alt="unity" width="80" height="80"/>
+                        </a>
+
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                        <h1 style={{fontSize: '2rem'}}>{title}</h1>
+                        <Typography>{text}</Typography>
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
+                         alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
+
+                        <Button color="primary"
+                                variant="outlined"
+                                size="lg"
+                        >
+                            <IconLink link={source} title={'Source Code'} icon={'fa fa-code'}/>
+                        </Button>
+                    </Box>
+                </CardActions>
+            </Card>
         </Box>
     );
 }

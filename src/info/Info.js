@@ -1,9 +1,4 @@
 import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
-import mock3 from "../img/mock3.png"
-import mock4 from "../img/mock4.png"
-import mock5 from "../img/mock5.png"
 
 
 import React from "react";
@@ -12,7 +7,7 @@ import React from "react";
 how to make this template work best for you! */
 
 //export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
-export let colors = [ "#FFFFFF","#0c7ded"];
+export let colors = ["#FFFFFF", "#0c7ded"];
 /*
 I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
 These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
@@ -59,30 +54,27 @@ export const info = {
             label: 'CV'
         },
         {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
-            link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
-        {
-            link: "https://github.com",
+            link: "https://github.com/Gustavo-Teleguario",
             icon: "fa fa-github",
             label: 'github'
         },
         {
-            link: "https://linkedin.com",
+            link: "https://www.linkedin.com/in/maynor-gustavo-teleguario-queche-b649ab1a8/",
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
         {
-            link: "https://twitter.com",
-            icon: "fa fa-twitter",
-            label: 'twitter'
-        }
+            link: "https://www.xing.com/profile/MaynorGustavo_TeleguarioQueche/cv",
+            icon: 'fa fa-xing',
+            label: 'instagram'
+        },
+        {
+            link: "https://gitlab.com/Gustavo-Teleguario",
+            icon: 'fa fa-gitlab',
+            label: 'facebook'
+        },
+
+
 // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
 // Just change the links so that they lead to your social profiles.
 
@@ -106,7 +98,7 @@ export const info = {
     knowledge: [{
         proficientWith: ['Java', 'Javascript', 'Python', 'C#', 'C++', 'SQL', 'ABAP', 'Go'],
         exposedTo: ['Angular', 'Nodejs', 'Oracle', 'MongoDB', 'AI'],
-        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unity', 'Microsoft Office'],
+        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unity', 'SAPUI5', 'Microsoft Office'],
         frameworks: ['Vue.js', 'React']
 
     }]
@@ -212,41 +204,72 @@ export const info = {
 
     portfolio: [ // This is where your portfolio projects will be detailed
         {
-            title: "Project 1",
-            live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
-            image: mock1,
-            video: require('../vid/GS-video.mp4')
+            title: "Dose rate meter with Teletector",
+            //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://www.youtube.com/@junkaiushi/videos", // this should be a link to the **repository** of the project, where the code is hosted.
+            //videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD",
+            image: "https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg",
+            hRef: "https://unrealengine.com/",
+            bio: <p>This is a small Biography about my Simulation made with Unreal Engine und Blue Blueprints.</p>,
+
 
         },
         {
-            title: "Project 2",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock2,
-            video: require('../vid/IMW-video.mp4')
-        },
-        {
-            title: "Project 3",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock3,
-            video: require('../vid/Fapp-video.mp4')
-        },
-        {
-            title: "Project 4",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock4,
-            video: require('../vid/LeanIX-video.mp4')
-        },
-        {
-            title: "Project 5",
-            live: "https://paytonpierce.dev",
-            source: "https://github.com/paytonjewell",
-            image: mock5,
-            video: require('../vid/demostrator.mp4')
+            title: "Feuerwehrquiz",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://www.youtube.com/@junkaiushi/videos",
+           // videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+            image: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
+            hRef: "https://unity.com/",
+            bio: <p>This is a small Biography about my Quiz App made with Unity and C#</p>,
 
-        }
-    ]
+        },
+        {
+            title: "Context Awarenes -Fitness App",
+            //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+            source: "https://www.youtube.com/@junkaiushi/videos", // this should be a link to the **repository** of the project, where the code is hosted.
+            //videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD",
+            image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg",
+            hRef: "https://www.android.com/intl/de_de/",
+            bio: <p>This is a small Biography about my Fitness App made with Android Studio and Java</p>,
+
+        },
+        {
+            title: "Custom Report LeanIX",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://www.youtube.com/@junkaiushi/videos",
+            //videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+            image: "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg",
+            hRef: "https://vuejs.org/",
+            bio: <p>This is a small Biography about my Custom Report made with the Framework Vue.js and JavaScrip</p>,
+
+        },
+        {
+            title: "Software Engineering I",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://www.youtube.com/@junkaiushi/videos",
+           // videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+            image: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+            hRef: "https://www.java.com/de/",
+            bio: <p>This is a small Biography about a small Program made with Java</p>,
+        },
+        {
+            title: "My own Portfolio",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://www.youtube.com/@junkaiushi/videos",
+          //  videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+            image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+            hRef: "https://react.dev/",
+            bio: <p>This is a small Biography about my Own Portfolio made with the Framework React and JavaScrip</p>,
+        },
+        {
+            title: "3D Interior eines Notarzwagen",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://www.youtube.com/@junkaiushi/videos",
+           // videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+            image: "https://download.blender.org/branding/community/blender_community_badge_white.svg",
+            hRef: "https://www.blender.org/",
+            bio: <p>This is a small Biography about a 3D-Model made with the Blender</p>,
+        },
+    ],
 }
