@@ -41,8 +41,7 @@ function PortfolioBlock(props) {
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         <h1 style={{fontSize: '2rem'}}>{title}</h1>
-                        Lizards are a widespread group of squamate reptiles, with over 6,000
-                        species, ranging across all continents except Antarctica
+
                     </Typography>
                 </CardContent>
                 <CardActions>
