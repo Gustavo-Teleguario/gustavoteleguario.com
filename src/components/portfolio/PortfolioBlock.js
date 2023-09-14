@@ -39,8 +39,8 @@ function PortfolioBlock(props) {
 
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        <h1 style={{fontSize: '2rem'}}>{title}</h1>
-                        <Typography>{text}</Typography>
+                        <h1 style={{fontSize: '2.5rem',marginBottom: '20px' }}>{title}</h1>
+                        <Typography style={{ fontSize: '20px'}}>{text}</Typography>
                     </Typography>
                 </CardContent>
                 <CardActions>
@@ -51,7 +51,7 @@ function PortfolioBlock(props) {
                                 variant="outlined"
                                 size="lg"
                         >
-                            <IconLink link={source} title={'Source Code'} icon={'fa fa-code'}/>
+                            <IconLink link={source} title={'Reference'} icon={'fa fa-code'}/>
                         </Button>
                     </Box>
                 </CardActions>

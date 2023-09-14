@@ -206,70 +206,90 @@ export const info = {
         {
             title: "Dose rate meter with Teletector",
             //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://www.youtube.com/@junkaiushi/videos", // this should be a link to the **repository** of the project, where the code is hosted.
-            videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD",
+            source: "https://drive.google.com/file/d/1BLt2yOL3ranKSn_CSH41_49F38kTFHWs/view?usp=sharing", // this should be a link to the **repository** of the project, where the code is hosted.
+            videoLink: "https://www.youtube.com/embed/93BKsyBjQG4?si=JXUMDpPBZ_tqNb23",
             image: "https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg",
             hRef: "https://unrealengine.com/",
-            bio: <p>This is a small Biography about my Simulation made with Unreal Engine und Blue Blueprints.</p>,
+            bio: <p>As part of a university project I developed a computer graphics simulation using Unreal Engine as
+                the foundation.
+                The project's primary objective was to create a graphical simulation of a non-existing device, a Dose
+                rate Meter Device
+                with Teletector, designed to detect photon radiation in various scenarios such as X-rays radiation, Tube radio, gamma radiation,
+                non-ionizing radiation, alpha, and beta radiation.
+                To achieve this, I utilized Blender to create the necessary 3D models. The simulation aimed to provide
+                viewers with an immersive experience,
+                allowing them to learn about the appearance and functionality of such a device. Through this project,
+                users could gain valuable
+                insights into the use and importance of Dose rate meter tools in various radiation detection
+                scenarios</p>,
 
 
         },
         {
-            title: "Feuerwehrquiz",
+            title: "Firefighter's Quiz",
             //live: "https://github.com/Gustavo-Teleguario",
-            source: "https://www.youtube.com/@junkaiushi/videos",
-            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+            source: "https://drive.google.com/file/d/1Wc5PAv-rNOI0pBeTz3H9ToykO9Y1er4p/view?usp=sharing",
+            videoLink: "https://www.youtube.com/embed/I9yv1PGS5v0?si=X6_kAIS6A7hi9N3-",
             image: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
             hRef: "https://unity.com/",
-            bio: <p>This is a small Biography about my Quiz App made with Unity and C#</p>,
+            bio: <p>As part of a university project, I developed a computer graphics project at university using Unity and C# as the primary tools.
+                The project's main objective was to create a quiz app for smartphones that incorporated essential 3D elements.
+                Specifically, the project aimed to develop a firefighting quiz focusing on extinguishing agents and procedures in a
+                3D environment. Users were presented with various 3D fire scenarios and related quiz questions, enhancing their understanding
+                of firefighting processes. This interactive approach provided users with valuable insights into fire extinguishing methods and
+                techniques</p>,
 
         },
         {
             title: "Context Awarenes -Fitness App",
             //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source: "https://www.youtube.com/@junkaiushi/videos", // this should be a link to the **repository** of the project, where the code is hosted.
-            videoLink: "https://www.youtube.com/embed/e3nai9rMOxY?si=JIkiEHsm0dxZHtdD",
+            source: "https://drive.google.com/file/d/1Q0-klKFigFucEM4S95wYB2LrVKT7a21L/view?usp=sharing", // this should be a link to the **repository** of the project, where the code is hosted.
+            videoLink: "https://www.youtube.com/embed/snLHXk3i5zA?si=kOABEDl0GWwQYkg2",
             image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg",
             hRef: "https://www.android.com/intl/de_de/",
-            bio: <p>This is a small Biography about my Fitness App made with Android Studio and Java</p>,
+            bio: <p>As part of a university project, I developed a computer graphics project at university using Unity and C# as the
+                primary tools. The project's main objective was to create a quiz app for smartphones that incorporated essential 3D elements.
+                Specifically, the project aimed to develop a firefighters quiz focusing on extinguishing agents and extinguishing methods in a 3D environment.
+                Users were presented with various 3D fire scenarios and related quiz questions, enhancing their understanding of firefighting processes.
+                This interactive approach provided users with valuable insights into fire extinguishing methods and techniques.</p>,
 
         },
-        {
-            title: "Custom Report LeanIX",
-            //live: "https://github.com/Gustavo-Teleguario",
-            source: "https://www.youtube.com/@junkaiushi/videos",
-            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
-            image: "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg",
-            hRef: "https://vuejs.org/",
-            bio: <p>This is a small Biography about my Custom Report made with the Framework Vue.js and JavaScrip</p>,
+        /* {
+             title: "Custom Report LeanIX",
+             //live: "https://github.com/Gustavo-Teleguario",
+             source: "https://www.youtube.com/@junkaiushi/videos",
+             videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+             image: "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg",
+             hRef: "https://vuejs.org/",
+             bio: <p>This is a small Biography about my Custom Report made with the Framework Vue.js and JavaScrip</p>,
 
-        },
-        {
-            title: "Software Engineering I",
-            //live: "https://github.com/Gustavo-Teleguario",
-            source: "https://www.youtube.com/@junkaiushi/videos",
+         },
+         {
+             title: "Software Engineering I",
+             //live: "https://github.com/Gustavo-Teleguario",
+             source: "https://www.youtube.com/@junkaiushi/videos",
+             videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+             image: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+             hRef: "https://www.java.com/de/",
+             bio: <p>This is a small Biography about a small Program made with Java</p>,
+         },
+         {
+             title: "My own Portfolio",
+             //live: "https://github.com/Gustavo-Teleguario",
+             source: "https://www.youtube.com/@junkaiushi/videos",
             videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
-            image: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
-            hRef: "https://www.java.com/de/",
-            bio: <p>This is a small Biography about a small Program made with Java</p>,
-        },
-        {
-            title: "My own Portfolio",
-            //live: "https://github.com/Gustavo-Teleguario",
-            source: "https://www.youtube.com/@junkaiushi/videos",
-           videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
-            image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-            hRef: "https://react.dev/",
-            bio: <p>This is a small Biography about my Own Portfolio made with the Framework React and JavaScrip</p>,
-        },
-        {
-            title: "3D Interior eines Notarzwagen",
-            //live: "https://github.com/Gustavo-Teleguario",
-            source: "https://www.youtube.com/@junkaiushi/videos",
-            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
-            image: "https://download.blender.org/branding/community/blender_community_badge_white.svg",
-            hRef: "https://www.blender.org/",
-            bio: <p>This is a small Biography about a 3D-Model made with the Blender</p>,
-        },
+             image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+             hRef: "https://react.dev/",
+             bio: <p>This is a small Biography about my Own Portfolio made with the Framework React and JavaScrip</p>,
+         },
+         {
+             title: "3D Interior eines Notarzwagen",
+             //live: "https://github.com/Gustavo-Teleguario",
+             source: "https://www.youtube.com/@junkaiushi/videos",
+             videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+             image: "https://download.blender.org/branding/community/blender_community_badge_white.svg",
+             hRef: "https://www.blender.org/",
+             bio: <p>This is a small Biography about a 3D-Model made with the Blender</p>,
+         },*/
     ],
 }
