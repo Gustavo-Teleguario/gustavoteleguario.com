@@ -8,7 +8,7 @@ import {info} from "../info/Info";
 const links = [
     {
         name: 'Home',
-        to: '/',
+        to: '/portfolio-page',
         active: 'home'
     },
     {
