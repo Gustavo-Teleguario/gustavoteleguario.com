@@ -247,11 +247,11 @@ export const info = {
             videoLink: "https://www.youtube.com/embed/snLHXk3i5zA?si=kOABEDl0GWwQYkg2",
             image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg",
             hRef: "https://www.android.com/intl/de_de/",
-            bio: <p>As part of a university project, I developed a computer graphics project at university using Unity and C# as the
-                primary tools. The project's main objective was to create a quiz app for smartphones that incorporated essential 3D elements.
-                Specifically, the project aimed to develop a firefighters quiz focusing on extinguishing agents and extinguishing methods in a 3D environment.
-                Users were presented with various 3D fire scenarios and related quiz questions, enhancing their understanding of firefighting processes.
-                This interactive approach provided users with valuable insights into fire extinguishing methods and techniques.</p>,
+            bio: <p>As part of a university project, I developed an Android app with Java for smartphones.
+                This app had two main tasks: running sessions and counting pull-ups.
+                The app included important features such as user authentication, a user-friendly home,
+                real-time geolocation for accurate step counting for running, and a workout results.
+                It provided users with a new experience for tracking their fitness activities and progress.</p>,
 
         },
         /* {
