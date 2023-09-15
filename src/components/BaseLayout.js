@@ -12,7 +12,6 @@ export default function BaseLayout() {
 
     function handleToggleDarkMode() {
         let oppositeOfCurrentDarkMode = !darkMode
-        console.log(oppositeOfCurrentDarkMode)
         localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`)
         setDarkMode(oppositeOfCurrentDarkMode)
     }
@@ -27,8 +26,8 @@ export default function BaseLayout() {
     }, [])
 
     return (
-        <Box className={darkMode ? Style.dark : Style.light}>
-            <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
+        <section className={darkMode ? Style.dark : Style.light} >
+            <Grid container display={'flex'} flexDirection={'column'} minHeight={'205vh'}
                   justifyContent={'space-between'}>
                 <Grid item>
                     <Navbar darkMode={darkMode} handleClick={handleToggleDarkMode}/>
@@ -49,7 +48,7 @@ export default function BaseLayout() {
                     </Box>
                 </Grid>
             </Grid>
-        </Box>
+        </section>
     )
 }
 
