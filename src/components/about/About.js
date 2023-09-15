@@ -1,7 +1,7 @@
 import React from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
-import {Box} from "@mui/material";
+import {Box, Grid} from "@mui/material";
 import {info} from "../../info/Info";
 
 
@@ -74,45 +74,43 @@ export default function About() {
             <p><span style={{color: info.baseColor}}>hobbies/interests <span
                 className={Style.green}>(main)</span> $</span> ls</p>
 
-            <div className={Style.tablesContainer}>
-                <div className={Style.tableWrapper}>
-                    <h2>Hobbies</h2>
-                    <table>
-                        <tbody>
-                        {info.hobbies.map((hobby, index) => (
-                            <tr key={index}>
-                                <td>{`${hobby.emoji} ${hobby.label}`}</td>
-                            </tr>
-                        ))}
-                        </tbody>
-                    </table>
-                </div>
+            <table className={Style.skills}>
+                <thead>
+                <tr>
+                    <th className={Style.columnHeader} style={{color: info.baseColor}}>Hobbies</th>
+                    <th className={Style.columnHeader} style={{color: info.baseColor}}>Skills</th>
+                    <th className={Style.columnHeader} style={{color: info.baseColor}}>Interest</th>
 
-                <div className={Style.tableWrapper}>
-                    <h2>Skills</h2>
-                    <table>
-                        <tbody>
-                        {info.skills.map((skill, index) => (
-                            <tr key={index}>
-                                <td>{`${skill.emoji} ${skill.label}`}</td>
-                            </tr>
-                        ))}
-                        </tbody>
-                    </table>
-                </div>
-                <div className={Style.tableWrapper}>
-                    <h2>Interests</h2>
-                    <table>
-                        <tbody>
-                        {info.interest.map((skill, index) => (
-                            <tr key={index}>
-                                <td>{`${skill.emoji} ${skill.label}`}</td>
-                            </tr>
-                        ))}
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+                </tr>
+                </thead>
+                <tbody>
+                {info.setOfSkills.map((entry, index) => (
+                    <tr key={index}>
+                        <td className={Style.column}>
+                            <ul>
+                                {entry.hobbies.map((hobbies, toolIndex) => (
+                                    <li key={toolIndex}>{`${hobbies.emoji} ${hobbies.label}`}</li>
+                                ))}
+                            </ul>
+                        </td>
+                        <td className={Style.column}>
+                            <ul>
+                                {entry.skills.map((skill, exposeIndex) => (
+                                    <li key={exposeIndex}>{`${skill.emoji} ${skill.label}`}</li>
+                                ))}
+                            </ul>
+                        </td>
+                        <td className={Style.column}>
+                            <ul>
+                                {entry.interest.map((interest, exposeIndex) => (
+                                    <li key={exposeIndex}>{`${interest.emoji} ${interest.label}`}</li>
+                                ))}
+                            </ul>
+                        </td>
+                    </tr>
+                ))}
+                </tbody>
+            </table>
         </>;
     }
 

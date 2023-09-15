@@ -104,6 +104,7 @@ export const info = {
     }]
     ,
 
+    setOfSkills:[{
     hobbies: [
         {
             label: 'reading',
@@ -200,6 +201,7 @@ export const info = {
             emoji: '🧠'
         }
     ],
+    }],
 
 
     portfolio: [ // This is where your portfolio projects will be detailed
