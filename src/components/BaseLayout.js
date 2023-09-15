@@ -26,7 +26,7 @@ export default function BaseLayout() {
     }, [])
 
     return (
-        <section className={darkMode ? Style.dark : Style.light} >
+        <Box className={darkMode ? Style.dark : Style.light} >
             <Grid container display={'flex'} flexDirection={'column'} minHeight={'205vh'}
                   justifyContent={'space-between'}>
                 <Grid item>
@@ -48,7 +48,7 @@ export default function BaseLayout() {
                     </Box>
                 </Grid>
             </Grid>
-        </section>
+        </Box>
     )
 }
 
