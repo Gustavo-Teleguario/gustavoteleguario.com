@@ -7,6 +7,30 @@ import SocialIcon from "./SocialIcon";
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 
+
+const bioBullets = [
+    {
+        emoji: '☕',
+        text: 'I love coffee',
+        link:"https://espressocoffeeguide.com/gourmet-coffee/coffees-of-the-americas/guatemala-coffee/"
+    },
+    {
+        emoji: '🌎',
+        text: 'based in Germany',
+        link:"https://www.kassel.de/buerger/kunst_und_kultur/documenta.php"
+    },
+    {
+        emoji: "💼",
+        text: "Software development University of Kassel",
+        link:"https://www.uni-kassel.de/eecs/"
+    },
+    {
+        emoji: "📧",
+        text: "Maynor_Teleguario@hotmail.com",
+        link: "mailto:Maynor_Teleguario@hotmail.com?subject=Let's work on something together!"
+    }
+];
+
 export default function Home() {
 
    return (
@@ -20,9 +44,11 @@ export default function Home() {
             </h1>
             <h2>I'm {info.position}.</h2>
             <Box component={'ul'} p={'0.8rem'}>
-               {info.miniBio.map((bio, index) => (
-                  <EmojiBullet key={index} emoji={bio.emoji} text={bio.text}/>
-               ))}
+                {bioBullets.map((bio, index) => (
+                    <li key={index}>
+                        <EmojiBullet link={bio.link} emoji={bio.emoji} text={bio.text}/>
+                    </li>
+                ))}
             </Box>
             <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}}>
                {info.socials.map((social, index) => (
