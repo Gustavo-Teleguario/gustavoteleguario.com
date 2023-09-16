@@ -32,7 +32,7 @@ export default function About() {
                 <tr>
                     <th className={Style.columnHeader} style={{color: info.baseColor}}>Proficient With</th>
                     <th className={Style.columnHeader} style={{color: info.baseColor}}>Tools</th>
-                    <th className={Style.columnHeader} style={{color: info.baseColor}}>Exposed To</th>
+                    <th className={Style.columnHeader} style={{color: info.baseColor}}>Exposed To Learn</th>
 
                 </tr>
                 </thead>

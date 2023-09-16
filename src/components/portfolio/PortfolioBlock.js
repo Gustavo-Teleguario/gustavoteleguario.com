@@ -13,7 +13,7 @@ import IconLink from "./IconLink";
 function PortfolioBlock(props) {
 
     /** image kann man hier setzen, wenn man es wieder braucht.*/
-    const {videoLink, source, title, image, href,text} = props;
+    const {videoLink, source, title, image, href, text} = props;
     return (
         <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}
              marginTop={'5em'}>
@@ -21,8 +21,8 @@ function PortfolioBlock(props) {
                   color="neutral"
                   invertedColors={false} sx={{width: 645, maxWidth: '100%', boxShadow: 'lg'}}>
                 <CardOverflow>
-                    <AspectRatio  variant="outlined"
-                                  ratio="4/3" sx={{minWidth: 350}}>
+                    <AspectRatio variant="outlined"
+                                 ratio="4/3" sx={{minWidth: 350}}>
                         <iframe
                             src={videoLink}
                             title="YouTube video"
@@ -39,8 +39,8 @@ function PortfolioBlock(props) {
 
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        <h1 style={{fontSize: '2.5rem',marginBottom: '20px' }}>{title}</h1>
-                        <Typography style={{ fontSize: '20px'}}>{text}</Typography>
+                        <h1 style={{fontSize: '2.5rem', marginBottom: '20px'}}>{title}</h1>
+                        <Typography style={{fontSize: '20px'}}>{text}</Typography>
                     </Typography>
                 </CardContent>
                 <CardActions>

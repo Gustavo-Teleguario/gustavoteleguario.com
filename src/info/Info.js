@@ -98,7 +98,7 @@ export const info = {
     knowledge: [{
         proficientWith: ['Java', 'Javascript', 'Python', 'C#', 'C++', 'SQL', 'ABAP', 'Go'],
         exposedTo: ['Angular', 'Nodejs', 'Oracle', 'MongoDB', 'AI'],
-        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unity', 'SAPUI5', 'Microsoft Office'],
+        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unreal Engine','Unity', 'SAPUI5', 'Microsoft Office'],
         frameworks: ['Vue.js', 'React']
 
     }]
