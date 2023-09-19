@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import Style from './BaseLayout.module.scss'
 import Navbar from "./Navbar";
 import Home from "./home/Home";
@@ -6,27 +6,42 @@ import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
+import HALO from 'vanta/dist/vanta.halo.min'
 
 export default function BaseLayout() {
-    let [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(true);
+
 
     function handleToggleDarkMode() {
-        let oppositeOfCurrentDarkMode = !darkMode
-        localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`)
-        setDarkMode(oppositeOfCurrentDarkMode)
+        let oppositeOfCurrentDarkMode = !darkMode;
+        localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`);
+        setDarkMode(oppositeOfCurrentDarkMode);
     }
 
     useEffect(() => {
         let detectedDarkMode = eval(localStorage.getItem('darkMode'));
         if (detectedDarkMode) {
-            setDarkMode(detectedDarkMode)
+            setDarkMode(detectedDarkMode);
         } else {
-            localStorage.setItem('darkMode', 'false')
+            localStorage.setItem('darkMode', 'false');
         }
-    }, [])
+    }, []);
+    const [vantaEffect, setVantaEffect] = useState(null)
+    const myRef = useRef(null)
+    useEffect(() => {
+        if (!vantaEffect) {
+            setVantaEffect(HALO({
+                el: myRef.current,
+                minWidth: 200.00,
+            }))
+        }
+        return () => {
+            if (vantaEffect) vantaEffect.destroy()
+        }
+    }, [vantaEffect])
 
     return (
-        <Box className={darkMode ? Style.dark : Style.light} >
+        <Box ref={myRef} className={Style.dark} >
             <Grid container display={'flex'} flexDirection={'column'} minHeight={'205vh'}
                   justifyContent={'space-between'}>
                 <Grid item>

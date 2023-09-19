@@ -6,7 +6,7 @@ import {info} from "../../info/Info";
 export default function Portfolio() {
     return (
         <Box  marginTop={'7em'}>
-            <Box sx={{ width: '100%', maxWidth: 1800 }} marginLeft={'7em'}>
+            <Box sx={{ width: '80%'}} marginLeft={'3em'}>
                 <Typography variant="h3" gutterBottom>
                     Welcome to my Portfolio
                 </Typography>

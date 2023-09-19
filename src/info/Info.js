@@ -214,7 +214,7 @@ export const info = {
             title: "Firefighter's Quiz",
             //live: "https://github.com/Gustavo-Teleguario",
             source: "https://drive.google.com/file/d/1Wc5PAv-rNOI0pBeTz3H9ToykO9Y1er4p/view?usp=sharing",
-            videoLink: "https://www.youtube.com/embed/I9yv1PGS5v0?si=X6_kAIS6A7hi9N3-",
+            videoLink: "https://www.youtube.com/embed/I9yv1PGS5v0?si=87nby1uqL4sBe2sM",
             image: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
             hRef: "https://unity.com/",
             bio: <p>As part of a university project, I developed a computer graphics project at university using Unity and C# as the primary tools.
