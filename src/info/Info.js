@@ -42,6 +42,11 @@ export const info = {
             label: 'github'
         },
         {
+            link: "https://gitlab.com/Gustavo-Teleguario",
+            icon: 'fa fa-gitlab',
+            label: 'facebook'
+        },
+        {
             link: "https://www.linkedin.com/in/maynor-gustavo-teleguario-queche-b649ab1a8/",
             icon: "fa fa-linkedin",
             label: 'linkedin'
@@ -51,12 +56,6 @@ export const info = {
             icon: 'fa fa-xing',
             label: 'instagram'
         },
-        {
-            link: "https://gitlab.com/Gustavo-Teleguario",
-            icon: 'fa fa-gitlab',
-            label: 'facebook'
-        },
-
 
 // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
 // Just change the links so that they lead to your social profiles.
@@ -81,109 +80,109 @@ export const info = {
     knowledge: [{
         proficientWith: ['Java', 'Javascript', 'Python', 'C#', 'C++', 'SQL', 'ABAP', 'Go'],
         exposedTo: ['Angular', 'Nodejs', 'Oracle', 'MongoDB', 'AI'],
-        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unreal Engine','Unity', 'SAPUI5', 'Microsoft Office'],
+        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unreal Engine', 'Unity', 'SAPUI5', 'Microsoft Office'],
         frameworks: ['Vue.js', 'React']
 
     }]
     ,
 
-    setOfSkills:[{
-    hobbies: [
-        {
-            label: 'reading',
-            emoji: '📖'
-        },
-        {
-            label: 'swimming',
-            emoji: '🏊'
-        },
-        {
-            label: 'Bicycle',
-            emoji: '🚴'
-        },
+    setOfSkills: [{
+        hobbies: [
+            {
+                label: 'reading',
+                emoji: '📖'
+            },
+            {
+                label: 'swimming',
+                emoji: '🏊'
+            },
+            {
+                label: 'Bicycle',
+                emoji: '🚴'
+            },
 
-        {
-            label: 'guitar',
-            emoji: '🎸'
-        },
-        {
-            label: 'travel',
-            emoji: '✈'
-        }
-    ],
+            {
+                label: 'guitar',
+                emoji: '🎸'
+            },
+            {
+                label: 'travel',
+                emoji: '✈'
+            }
+        ],
 
-    skills: [
-        {
-            label: 'programming',
-            emoji: '👨‍💻'
-        },
-        {
-            label: 'problem solving',
-            emoji: '🤝'
-        },
-        {
-            label: 'computer repair technician',
-            emoji: '🖥️',
-        },
-        {
-            label: 'hand soldering',
-            emoji: '⚡',
-        },
-        {
-            label: 'effective communication',
-            emoji: '📢'
-        },
-        {
-            label: 'drawing',
-            emoji: '🖍️'
-        },
-        {
-            label: 'adaptability',
-            emoji: '👩🏾‍🤝‍👨🏻'
-        },
-        {
-            label: 'teamwork',
-            emoji: '💪'
-        }
+        skills: [
+            {
+                label: 'programming',
+                emoji: '👨‍💻'
+            },
+            {
+                label: 'problem solving',
+                emoji: '🤝'
+            },
+            {
+                label: 'computer repair technician',
+                emoji: '🖥️',
+            },
+            {
+                label: 'hand soldering',
+                emoji: '⚡',
+            },
+            {
+                label: 'effective communication',
+                emoji: '📢'
+            },
+            {
+                label: 'drawing',
+                emoji: '🖍️'
+            },
+            {
+                label: 'adaptability',
+                emoji: '👩🏾‍🤝‍👨🏻'
+            },
+            {
+                label: 'teamwork',
+                emoji: '💪'
+            }
 
-    ],
+        ],
 
-    interest: [
-        {
-            label: 'Learning',
-            emoji: '📚'
-        },
-        {
-            label: 'Technology',
-            emoji: '🤖'
-        },
-        {
-            label: 'Health',
-            emoji: '🧬'
-        },
-        {
-            label: 'Universe',
-            emoji: '🌌'
-        },
-        {
-            label: 'Nature',
-            emoji: '🌴'
-        },
+        interest: [
+            {
+                label: 'Learning',
+                emoji: '📚'
+            },
+            {
+                label: 'Technology',
+                emoji: '🤖'
+            },
+            {
+                label: 'Health',
+                emoji: '🧬'
+            },
+            {
+                label: 'Universe',
+                emoji: '🌌'
+            },
+            {
+                label: 'Nature',
+                emoji: '🌴'
+            },
 
-        {
-            label: 'Animals',
-            emoji: '🐢'
-        },
+            {
+                label: 'Animals',
+                emoji: '🐢'
+            },
 
-        {
-            label: 'Languages',
-            emoji: '🗣️'
-        },
-        {
-            label: 'psychology',
-            emoji: '🧠'
-        }
-    ],
+            {
+                label: 'Languages',
+                emoji: '🗣️'
+            },
+            {
+                label: 'psychology',
+                emoji: '🧠'
+            }
+        ],
     }],
 
 
@@ -199,7 +198,8 @@ export const info = {
                 the foundation.
                 The project's primary objective was to create a graphical simulation of a non-existing device, a Dose
                 rate Meter Device
-                with Teletector, designed to detect photon radiation in various scenarios such as X-rays radiation, Tube radio, gamma radiation,
+                with Teletector, designed to detect photon radiation in various scenarios such as X-rays radiation, Tube
+                radio, gamma radiation,
                 non-ionizing radiation, alpha, and beta radiation.
                 To achieve this, I utilized Blender to create the necessary 3D models. The simulation aimed to provide
                 viewers with an immersive experience,
@@ -217,11 +217,16 @@ export const info = {
             videoLink: "https://www.youtube.com/embed/I9yv1PGS5v0?si=87nby1uqL4sBe2sM",
             image: "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg",
             hRef: "https://unity.com/",
-            bio: <p>As part of a university project, I developed a computer graphics project at university using Unity and C# as the primary tools.
-                The project's main objective was to create a quiz app for smartphones that incorporated essential 3D elements.
-                Specifically, the project aimed to develop a firefighting quiz focusing on extinguishing agents and procedures in a
-                3D environment. Users were presented with various 3D fire scenarios and related quiz questions, enhancing their understanding
-                of firefighting processes. This interactive approach provided users with valuable insights into fire extinguishing methods and
+            bio: <p>As part of a university project, I developed a computer graphics project at university using Unity
+                and C# as the primary tools.
+                The project's main objective was to create a quiz app for smartphones that incorporated essential 3D
+                elements.
+                Specifically, the project aimed to develop a firefighting quiz focusing on extinguishing agents and
+                procedures in a
+                3D environment. Users were presented with various 3D fire scenarios and related quiz questions,
+                enhancing their understanding
+                of firefighting processes. This interactive approach provided users with valuable insights into fire
+                extinguishing methods and
                 techniques</p>,
 
         },

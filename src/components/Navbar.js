@@ -8,7 +8,7 @@ import {info} from "../info/Info";
 const links = [
     {
         name: 'Home',
-        to: '/portfolio-page',
+        to: '/portfolio-page/',
         active: 'home'
     },
     {
@@ -32,7 +32,7 @@ const links = [
 
 export default function Navbar({darkMode, handleClick}) {
     const location = useLocation()
-    const [active, setActive] = useState(location.pathname === '/portfolio-page' ? 'home' : location.pathname.slice(1, location.pathname.length));
+    const [active, setActive] = useState(location.pathname === '/portfolio-page/' ? 'home' : location.pathname.slice(1, location.pathname.length));
 
     return (
         <Box component={'nav'} width={'100%'}>
