@@ -12,7 +12,7 @@ const links = [
         active: 'home'
     },
     {
-        name: 'About Me',
+        name: 'About me',
         to: '/about',
         active: 'about'
     },
@@ -37,8 +37,7 @@ export default function Navbar({darkMode, handleClick}) {
     return (
         <Box component={'nav'} width={'100%'}>
             <Box component={'ul'} display={'flex'} justifyContent={'center'} alignItems={'center'}
-                 gap={{xs: '2rem', md: '8rem'}}
-                 textTransform={'lowercase'} fontSize={'1rem'}>
+                 gap={{xs: '2rem', md: '8rem'}} fontSize={'1.5rem'}>
                 {links.map((link, index) => (
                     <Box key={index} component={'li'}
                          className={`${(link.active === active && !link.type) && Style.active}

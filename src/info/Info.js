@@ -24,7 +24,6 @@ of what each of the values mean.
 export const info = {
     firstName: "Maynor",
     lastName: "Teleguario",
-    initials: "js", // the example uses first and last, but feel free to use three or more if you like.
     position: "Computer Scientist",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(180deg, ${colors[1]}, ${colors[0]}, ${colors[1]})`, // don't change this either
