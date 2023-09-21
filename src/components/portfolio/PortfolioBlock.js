@@ -1,6 +1,5 @@
 import React from 'react';
 import AspectRatio from '@mui/joy/AspectRatio';
-import Button from '@mui/joy/Button';
 import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import CardOverflow from '@mui/joy/CardOverflow';
@@ -9,10 +8,10 @@ import {Box} from "@mui/material";
 import {CardActions} from "@mui/joy";
 import IconLink from "./IconLink";
 
-
+export let colors = ["#d742e7", "#0a070c","#0cefef"];
 function PortfolioBlock(props) {
 
-    const {image, videoLink, source, title,href,text} = props;
+    const {image, videoLink, source, title, href, text} = props;
 
     return (
         <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}
@@ -44,15 +43,11 @@ function PortfolioBlock(props) {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
-                         alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
-
-                        <Button color="primary"
-                                variant="outlined"
-                                size="lg"
-                        >
-                            <IconLink link={source} title={'Reference'} icon={'fa fa-code'}/>
-                        </Button>
+                    <Box fontSize={'1.5rem'} p={1} border={'2px solid white'} borderRadius={'25px'}
+                         style={{
+                             background: `-webkit-linear-gradient(180deg, ${colors[0]}, ${colors[1]}, ${colors[2]})` // Gradient von Rot zu Blau
+                         }}>
+                        <IconLink link={source} title={'Reference'} icon={'fa fa-code'}/>
                     </Box>
                 </CardActions>
             </Card>
