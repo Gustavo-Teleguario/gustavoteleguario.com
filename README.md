@@ -1,1 +1,2 @@
-# Gustavo-Teleguario own Portfolio
+#React personal Portfolio Template 
+a simple personal portfolio template
