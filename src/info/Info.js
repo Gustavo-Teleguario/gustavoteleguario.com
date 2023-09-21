@@ -32,7 +32,7 @@ export const info = {
 
     socials: [
         {
-            link: "https://drive.google.com/file/d/12hRdJVFpxfEtYAipKuClPwxxy9-Myq57/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1qTFrcIvBE8dH8cooE9pEpzfjJi7wpPNi/view?usp=sharing",
             icon: 'fa fa-file-pdf-o',
             label: 'CV'
         },
