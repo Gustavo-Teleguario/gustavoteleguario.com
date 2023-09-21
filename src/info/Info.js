@@ -244,17 +244,20 @@ export const info = {
                 It provided users with a new experience for tracking their fitness activities and progress.</p>,
 
         },
-        /* {
+         {
              title: "Custom Report LeanIX",
              //live: "https://github.com/Gustavo-Teleguario",
-             source: "https://www.youtube.com/@junkaiushi/videos",
-             videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+             source: "https://github.com/Gustavo-Teleguario/Network-Graph-Custom-Report-",
+             videoLink: "https://www.youtube.com/embed/vxghGxuAWac?si=O1RY_O2JI0MOjze-",
              image: "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg",
              hRef: "https://vuejs.org/",
-             bio: <p>This is a small Biography about my Custom Report made with the Framework Vue.js and JavaScrip</p>,
+             bio: <p>Custom reports are a great way for analyzing and communicating Enterprise Architecture insights of some organization
+                 in an effective way. This small custom report aims to show the relationships that exist within some LeanIX Meta Model or
+                 Fact Sheet types, such as Application and their respective subtypes or another Fact Sheet type. In some cases, it can be a bit complex to visualize these
+                 relationships, Therefore, this custom report was created in a graph format to facilitate visualization of these connection.</p>,
 
          },
-         {
+         /*{
              title: "Software Engineering I",
              //live: "https://github.com/Gustavo-Teleguario",
              source: "https://www.youtube.com/@junkaiushi/videos",

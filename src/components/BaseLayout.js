@@ -32,7 +32,8 @@ export default function BaseLayout() {
         if (!vantaEffect) {
             setVantaEffect(HALO({
                 el: myRef.current,
-                minWidth: 200.00,
+                minWidth: 100.00,
+                backgroundColor: 0x0,
             }))
         }
         return () => {
@@ -41,7 +42,7 @@ export default function BaseLayout() {
     }, [vantaEffect])
 
     return (
-        <Box ref={myRef} className={Style.dark} >
+        <Box ref={myRef} className={Style.dark}>
             <Grid container display={'flex'} flexDirection={'column'} minHeight={'205vh'}
                   justifyContent={'space-between'}>
                 <Grid item>

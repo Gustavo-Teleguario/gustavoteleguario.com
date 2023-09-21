@@ -12,8 +12,8 @@ import IconLink from "./IconLink";
 
 function PortfolioBlock(props) {
 
-    /** image kann man hier setzen, wenn man es wieder braucht.*/
-    const {videoLink, source, title, image, href, text} = props;
+    const {image, videoLink, source, title,href,text} = props;
+
     return (
         <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}
              marginTop={'5em'}>
@@ -57,6 +57,7 @@ function PortfolioBlock(props) {
                 </CardActions>
             </Card>
         </Box>
+
     );
 }
 
