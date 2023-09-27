@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Gustavo-Teleguario.github.io/portfolio-page",
+ 
   "name": "porfolio-page",
   "version": "1.0.0",
   "private": false,
@@ -30,8 +30,7 @@
     "vanta": "^0.5.24"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+   
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
