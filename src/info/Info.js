@@ -6,8 +6,8 @@ import React from "react";
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
 how to make this template work best for you! */
 
-//export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
-export let colors = ["#FFFFFF", "#0c7ded"];
+export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
+//export let colors = ["#FFFFFF", "#0c7ded"];
 /*
 I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
 These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
@@ -22,11 +22,11 @@ of what each of the values mean.
  */
 
 export const info = {
-    firstName: "Maynor",
+    firstName: "Gustavo",
     lastName: "Teleguario",
-    position: "Computer Scientist",
+    position: "passionate about Technology",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
-    gradient: `-webkit-linear-gradient(180deg, ${colors[1]}, ${colors[0]}, ${colors[1]})`, // don't change this either
+    gradient: `-webkit-linear-gradient(135deg, ${colors[1]}, ${colors[0]}, ${colors[1]})`, // don't change this either
     baseColor: colors[0],
 
     socials: [
