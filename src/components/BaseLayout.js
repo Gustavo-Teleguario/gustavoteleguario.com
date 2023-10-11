@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useState, useRef} from 'react';
 import Style from './BaseLayout.module.scss'
 import Navbar from "./Navbar";
 import Home from "./home/Home";
@@ -9,40 +9,55 @@ import {Box, Grid} from "@mui/material";
 import HALO from 'vanta/dist/vanta.halo.min'
 
 export default function BaseLayout() {
-    const [darkMode, setDarkMode] = useState(true);
-
-
-    function handleToggleDarkMode() {
-        let oppositeOfCurrentDarkMode = !darkMode;
-        localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`);
-        setDarkMode(oppositeOfCurrentDarkMode);
-    }
-
-    useEffect(() => {
-        let detectedDarkMode = eval(localStorage.getItem('darkMode'));
-        if (detectedDarkMode) {
-            setDarkMode(detectedDarkMode);
-        } else {
-            localStorage.setItem('darkMode', 'false');
-        }
-    }, []);
+    let [darkMode, setDarkMode] = useState(false);
     const [vantaEffect, setVantaEffect] = useState(null)
     const myRef = useRef(null)
-    useEffect(() => {
-        if (!vantaEffect) {
+
+    function handleToggleDarkMode() {
+        setDarkMode(!darkMode);
+        if (!vantaEffect && !darkMode) {
             setVantaEffect(HALO({
                 el: myRef.current,
                 minWidth: 100.00,
                 backgroundColor: 0x0,
             }))
+        }else if (darkMode){
+            setVantaEffect(vantaEffect.destroy())
         }
-        return () => {
-            if (vantaEffect) vantaEffect.destroy()
-        }
-    }, [vantaEffect])
+    }
+
+
+    /*  function handleToggleDarkMode() {
+          let oppositeOfCurrentDarkMode = !darkMode;
+          localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`);
+          setDarkMode(oppositeOfCurrentDarkMode);
+      }*/
+
+    /*  useEffect(() => {
+          let detectedDarkMode = eval(localStorage.getItem('darkMode'));
+          if (detectedDarkMode) {
+              setDarkMode(detectedDarkMode);
+          } else {
+              localStorage.setItem('darkMode', 'false');
+          }
+      }, []);*/
+    /*  const [vantaEffect, setVantaEffect] = useState(null)
+      const myRef = useRef(null)
+      useEffect(() => {
+          if (!vantaEffect) {
+              setVantaEffect(HALO({
+                  el: myRef.current,
+                  minWidth: 100.00,
+                  backgroundColor: 0x0,
+              }))
+          }
+          return () => {
+              if (vantaEffect) vantaEffect.destroy()
+          }
+      }, [vantaEffect])*/
 
     return (
-        <Box ref={myRef} className={Style.dark}>
+        <Box ref={myRef} className={darkMode ? Style.dark : myRef.current}>
             <Grid container display={'flex'} flexDirection={'column'} minHeight={'205vh'}
                   justifyContent={'space-between'}>
                 <Grid item>
