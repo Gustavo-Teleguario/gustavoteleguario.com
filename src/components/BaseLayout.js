@@ -9,20 +9,22 @@ import {Box, Grid} from "@mui/material";
 import HALO from 'vanta/dist/vanta.halo.min'
 
 export default function BaseLayout() {
-    let [darkMode, setDarkMode] = useState(false);
+    const [isBoolean, setBoolean] = useState(false);
+    let [darkMode, setDarkMode] = useState(true);
     const [vantaEffect, setVantaEffect] = useState(null)
     const myRef = useRef(null)
 
     function handleToggleDarkMode() {
-        setDarkMode(!darkMode);
-        if (!vantaEffect && !darkMode) {
+        if (!vantaEffect && darkMode) {
             setVantaEffect(HALO({
                 el: myRef.current,
                 minWidth: 100.00,
                 backgroundColor: 0x0,
             }))
-        }else if (darkMode){
+            setBoolean(true);
+        } else if (darkMode && vantaEffect) {
             setVantaEffect(vantaEffect.destroy())
+            setBoolean(false);
         }
     }
 
@@ -61,7 +63,7 @@ export default function BaseLayout() {
             <Grid container display={'flex'} flexDirection={'column'} minHeight={'205vh'}
                   justifyContent={'space-between'}>
                 <Grid item>
-                    <Navbar darkMode={darkMode} handleClick={handleToggleDarkMode}/>
+                    <Navbar darkMode={isBoolean} handleClick={handleToggleDarkMode}/>
                 </Grid>
                 <Grid item flexGrow={1}>
                     <Routes>

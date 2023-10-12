@@ -12,13 +12,14 @@ export default function Toggler({darkMode, handleClick}) {
             {
                 darkMode ?
                     <span onClick={handleClick} aria-label="Full Moon" role="img" style={{fontSize: '2rem'}}>
-                          <Svg icon="guitar" width="80" height="80"/>
+                <Svg icon="guitar" width="80" height="80"/>
 
-                        </span>
+                </span>
                     :
                     <span onClick={handleClick} aria-label="New Moon" role="img" style={{fontSize: '2rem'}}>
                          <Svg icon="acousticGuitar" width="80" height="80"/>
                     </span>
+
             }
         </Box>
     )

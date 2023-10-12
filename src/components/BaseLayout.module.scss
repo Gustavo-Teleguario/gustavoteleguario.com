@@ -4,6 +4,13 @@ footer {
   color: $dark;
 }
 
+body dark {
+  background-color: $dark;
+  color: $white;
+  transition: all 400ms;
+  min-width: 100vh;
+}
+
 .dark {
   background-color: $dark;
   color: $white;
@@ -22,6 +29,10 @@ footer {
 
   footer {
     color: $white;
+  }
+
+  a:hover, i:hover, li:hover {
+    color:  $lightgray;
   }
 }
 
