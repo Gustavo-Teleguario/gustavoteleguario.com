@@ -8,6 +8,7 @@ how to make this template work best for you! */
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 //export let colors = ["#FFFFFF", "#0c7ded"];
+export let colorPortfolioText = ["rgb(4,245,148)"];
 /*
 I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
 These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
@@ -28,10 +29,11 @@ export const info = {
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors[1]}, ${colors[0]}, ${colors[1]})`, // don't change this either
     baseColor: colors[0],
+    baseColorText: colorPortfolioText[0],
 
     socials: [
         {
-            link: "https://drive.google.com/file/d/1RwEOJVzcdUWHwxxkUNb1v-zhoK21OqeJ/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1xe8NTMkzymNm0k8PYLvXEyfdN8a3CvGs/view?usp=sharing",
             icon: 'fa fa-file-pdf-o',
             label: 'CV'
         },
@@ -60,21 +62,16 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: <p>My name is Maynor Gustavo, and I from Guatemala. Ever since my early years, curiosity has been my driving
-        force, and in the course of these recent years, I've nurtured a diverse array of skills. Among them lies the art
-        of
-        effective communication and seamless integration into any environment. Thus, when I ventured to Germany, it
-        posed a formidable
-        challenge, but one I met with unwavering determination. Over the past decade, I've been dedicated to pursuing my
-        studies in Computer Science at the University of
-        Kassel. This period has not only been about academic growth but also about harmonizing my studies with
-        professional experience. I've concurrently engaged with
-        various companies, reaping invaluable work insights and fostering novel knowledge. At present, I find myself in
-        the role of a Software Developer at <a href={'https://www.comtec.eecs.uni-kassel.de/'}>ComTec University of
-            Kassel</a>,
-        a journey that has further ignited my profound passion for the realm of software.
-        Amidst this professional journey, I also cultivate a rich personal life, where I wholeheartedly embrace my
-        cherished hobbies.</p>,
+    bio: <p>Hello my name is Maynor Gustavo, and I from Guatemala. From my earliest childhood, curiosity has been my driving force,
+        and over the course of these past years, I have cultivated a diverse range of skills. Among them is the art of effective
+        communication and seamless integration into any environment. Therefore, when I ventured to Germany, the challenge was formidable,
+        but I faced it with unwavering determination.
+        Over the last decade, I have been dedicated to studying Computer Science at the University of Kassel. This period has not only
+        been one of academic growth but also of integrating my studies with professional experience. I have worked simultaneously in
+        various companies as a working student, gathering valuable work experiences and fostering new knowledge.
+        I am currently open to new job opportunities. My most recent position was as a software developer at <a href={'https://www.comtec.eecs.uni-kassel.de/'}>ComTec University of Kassel</a>,
+        a journey that has further ignited my deep passion for the world of software. Amidst this professional journey,
+        I also cultivate a rich personal life alongside my friends and the environment around me, learning more about life every day.</p>,
 
     knowledge: [{
         proficientWith: ['Java', 'Javascript', 'Python', 'C#', 'C++', 'SQL', 'ABAP', 'Go'],

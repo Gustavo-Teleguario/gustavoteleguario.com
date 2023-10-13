@@ -15,9 +15,9 @@ const projects = [
 
 export default function Portfolio() {
     return (
-        <Box marginTop={'7em'}>
-            <Box sx={{width: '80%'}} marginLeft={'3em'}>
-                <Typography variant="h3" gutterBottom>
+        <Box marginTop={'7em'} >
+            <Box sx={{width: '80%'}} marginLeft={'3em'}  >
+                <Typography variant="h3" gutterBottom style={{color: info.baseColorText}}>
                     Welcome to my Portfolio
                 </Typography>
                 <Typography style={{fontSize: '25px'}} variant="body1" gutterBottom>
@@ -38,7 +38,7 @@ export default function Portfolio() {
                     </Grid>
                 ))}
                 <Box sx={{width: '80%'}} marginLeft={'3em'} marginTop={'5em'}>
-                    <Typography variant="h3" gutterBottom>
+                    <Typography variant="h3" gutterBottom style={{color: info.baseColorText}}>
                         Mockups
                     </Typography>
                     <Typography style={{fontSize: '25px'}} variant="body1" gutterBottom>
