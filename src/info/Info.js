@@ -33,7 +33,7 @@ export const info = {
 
     socials: [
         {
-            link: "https://drive.google.com/file/d/1xe8NTMkzymNm0k8PYLvXEyfdN8a3CvGs/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1ClzqxoF1ZV-ebxrk_oQb8_MN5oaS32jU/view?usp=sharing",
             icon: 'fa fa-file-pdf-o',
             label: 'CV'
         },
@@ -74,9 +74,9 @@ export const info = {
         I also cultivate a rich personal life alongside my friends and the environment around me, learning more about life every day.</p>,
 
     knowledge: [{
-        proficientWith: ['Java', 'Javascript', 'Python', 'C#', 'C++', 'SQL', 'ABAP', 'Go'],
-        exposedTo: ['Angular', 'Nodejs', 'Oracle', 'MongoDB', 'AI'],
-        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unreal Engine', 'Unity', 'SAPUI5', 'Microsoft Office'],
+        proficientWith: ['Java','C#', 'C++', 'Javascript', 'HTML', 'CSS'],
+        exposedTo: ['Database', 'Frameworks', 'AI'],
+        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unreal Engine', 'Unity', 'Microsoft Office'],
         frameworks: ['Vue.js', 'React']
 
     }]

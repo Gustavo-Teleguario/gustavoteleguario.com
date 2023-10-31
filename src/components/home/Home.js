@@ -21,8 +21,8 @@ const bioBullets = [
     },
     {
         emoji: "💼",
-        text: "Software developer at the University of Kassel",
-        link:"https://www.uni-kassel.de/eecs/"
+        text: "Open to Work",
+        //link:"https://www.uni-kassel.de/eecs/"
     },
     {
         emoji: "📧",
