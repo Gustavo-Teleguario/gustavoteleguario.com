@@ -21,8 +21,8 @@ const bioBullets = [
     },
     {
         emoji: "💼",
-        text: "Open to Work",
-        //link:"https://www.uni-kassel.de/eecs/"
+        text: "IT Support at Gascade",
+        link:"https://www.gascade.de/"
     },
     {
         emoji: "📧",
