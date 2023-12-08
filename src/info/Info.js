@@ -69,7 +69,7 @@ export const info = {
         Over the last decade, I have been dedicated to studying Computer Science at the University of Kassel. This period has not only
         been one of academic growth but also of integrating my studies with professional experience. I have worked simultaneously in
         various companies as a working student, gathering valuable work experiences and fostering new knowledge.
-        In my current role as IT Support at <a href={'https://karriere.gascade.de/ueber-uns/warum-gascade'}>GASCADE Gastransport GmbH</a>, I have had the opportunity to expand my passion for the world of technology
+        In my current role as IT Management (Capacity and development) at <a href={'https://karriere.gascade.de/ueber-uns/warum-gascade'}>GASCADE Gastransport GmbH</a>, I have had the opportunity to expand my passion for the world of technology
         and gain new and fascinating experience in the field of energy economics. This professional journey has allowed me
         to not only utilize my IT skills but also develop social competence through interactions with diverse people and other
         experiences,
