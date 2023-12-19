@@ -33,7 +33,7 @@ export const info = {
 
     socials: [
         {
-            link: "https://drive.google.com/file/d/1FqFq061mgjU8R4kZ8QJas0bxyRZ2Xtbz/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1zPYjnnXJbo3vhO3nlu1iaPVuA9TXoGRd/view?usp=sharing",
             icon: 'fa fa-file-pdf-o',
             label: 'CV'
         },
@@ -62,7 +62,7 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: <p>Hello my name is Maynor Gustavo, and I from beautiful <a href={'https://www.google.com/maps/place/Guatemala/@15.7228485,-90.2348,7z/data=!3m1!4b1!4m6!3m5!1s0x8588135036e7506b:0x35982b375b84d5bb!8m2!3d15.783471!4d-90.230759!16zL20vMDM0NV8?entry=ttu'}>Guatemala</a>. From my earliest childhood, curiosity has been my driving force,
+    bio: <p> "Hello World" my name is Maynor Gustavo, and I from beautiful <a href={'https://www.google.com/maps/place/Guatemala/@15.7228485,-90.2348,7z/data=!3m1!4b1!4m6!3m5!1s0x8588135036e7506b:0x35982b375b84d5bb!8m2!3d15.783471!4d-90.230759!16zL20vMDM0NV8?entry=ttu'}>Guatemala</a>. From my earliest childhood, curiosity has been my driving force,
         and over the course of these past years, I have cultivated a diverse range of skills. Among them is the art of effective
         communication and seamless integration into any environment. Therefore, when I ventured to Germany, the challenge was formidable,
         but I faced it with unwavering determination.
