@@ -33,7 +33,7 @@ export const info = {
 
     socials: [
         {
-            link: "https://drive.google.com/file/d/1zPYjnnXJbo3vhO3nlu1iaPVuA9TXoGRd/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1yg5EZ5lJXvy6ijwGfhxoP5TvuoqNAuDc/view?usp=sharing",
             icon: 'fa fa-file-pdf-o',
             label: 'CV'
         },
@@ -62,20 +62,25 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: <p> "Hello World" my name is Maynor Gustavo, and I from beautiful <a href={'https://www.google.com/maps/place/Guatemala/@15.7228485,-90.2348,7z/data=!3m1!4b1!4m6!3m5!1s0x8588135036e7506b:0x35982b375b84d5bb!8m2!3d15.783471!4d-90.230759!16zL20vMDM0NV8?entry=ttu'}>Guatemala</a>. From my earliest childhood, curiosity has been my driving force,
-        and over the course of these past years, I have cultivated a diverse range of skills. Among them is the art of effective
-        communication and seamless integration into any environment. Therefore, when I ventured to Germany, the challenge was formidable,
-        but I faced it with unwavering determination.
-        Over the last decade, I have been dedicated to studying Computer Science at the University of Kassel. This period has not only
-        been one of academic growth but also of integrating my studies with professional experience. I have worked simultaneously in
-        various companies as a working student, gathering valuable work experiences and fostering new knowledge.
-        I am currently spending time in Software Development and Web Development. In the midst of this professional journey I also cultivate
-        a rich personal life with my friends and family in my spare time.</p>,
+    bio: <p> "Hello World" my name is Gustavo Teleguario I am 35 years old, and I from beautiful <a href={'https://www.google.com/maps/place/Guatemala/@15.7228485,-90.2348,7z/data=!3m1!4b1!4m6!3m5!1s0x8588135036e7506b:0x35982b375b84d5bb!8m2!3d15.783471!4d-90.230759!16zL20vMDM0NV8?entry=ttu'}>Guatemala</a>.
+        I discovered my passion for computer science at <a href={'https://www.uni-kassel.de/uni/studium/informatik-bachelor'}>University of Kassel</a>, where I had a lot of fun. One of my
+        outstanding qualities is my ability to adapt to any situation and my strong communication skills, which allow me
+        to effectively interact with people from diverse backgrounds.
+
+        My passion lies in computer graphics as well as software and web development. I am always eager to continue
+        developing myself in these areas and to acquire new skills.
+
+        Over the past 12 years here in Germany, I have gained diverse experiences in various companies and continue to
+        apply my motivation and energy to continuously develop myself. I am always keen to take on new challenges and
+        expand my knowledge.
+
+        Outside of my professional activities I dedicate time to my favorite hobbies, which are a fundamental part of my personality.
+    </p>,
 
     knowledge: [{
-        proficientWith: ['Java','C#', 'C++', 'Javascript', 'HTML', 'CSS'],
+        proficientWith: ['Java', 'C#', 'C++', 'Javascript', 'HTML', 'CSS'],
         exposedTo: ['Database', 'Frameworks', 'AI'],
-        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unreal Engine', 'Unity', 'Microsoft Office'],
+        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unreal Engine', 'Unity', 'Microsoft Office', 'Matrix42 Service Management'],
         frameworks: ['Vue.js', 'React']
 
     }]
@@ -239,45 +244,49 @@ export const info = {
                 It provided users with a new experience for tracking their fitness activities and progress.</p>,
 
         },
-         {
-             title: "Custom Report LeanIX",
-             //live: "https://github.com/Gustavo-Teleguario",
-             source: "https://github.com/Gustavo-Teleguario/Network-Graph-Custom-Report-",
-             videoLink: "https://www.youtube.com/embed/vxghGxuAWac?si=O1RY_O2JI0MOjze-",
-             image: "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg",
-             hRef: "https://vuejs.org/",
-             bio: <p>Custom reports are a great way for analyzing and communicating Enterprise Architecture insights of some organization
-                 in an effective way. This small custom report aims to show the relationships that exist within some LeanIX Meta Model or
-                 Fact Sheet types, such as Application and their respective subtypes or another Fact Sheet type. In some cases, it can be a bit complex to visualize these
-                 relationships, Therefore, this custom report was created in a graph format to facilitate visualization of these connection.</p>,
+        {
+            title: "Custom Report LeanIX",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://github.com/Gustavo-Teleguario/Network-Graph-Custom-Report-",
+            videoLink: "https://www.youtube.com/embed/vxghGxuAWac?si=O1RY_O2JI0MOjze-",
+            image: "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg",
+            hRef: "https://vuejs.org/",
+            bio: <p>Custom reports are a great way for analyzing and communicating Enterprise Architecture insights of
+                some organization
+                in an effective way. This small custom report aims to show the relationships that exist within some
+                LeanIX Meta Model or
+                Fact Sheet types, such as Application and their respective subtypes or another Fact Sheet type. In some
+                cases, it can be a bit complex to visualize these
+                relationships, Therefore, this custom report was created in a graph format to facilitate visualization
+                of these connection.</p>,
 
-         },
-         /*{
-             title: "Software Engineering I",
-             //live: "https://github.com/Gustavo-Teleguario",
-             source: "https://www.youtube.com/@junkaiushi/videos",
-             videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
-             image: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
-             hRef: "https://www.java.com/de/",
-             bio: <p>This is a small Biography about a small Program made with Java</p>,
-         },
-         {
-             title: "My own Portfolio",
-             //live: "https://github.com/Gustavo-Teleguario",
-             source: "https://www.youtube.com/@junkaiushi/videos",
+        },
+        /*{
+            title: "Software Engineering I",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://www.youtube.com/@junkaiushi/videos",
             videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
-             image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-             hRef: "https://react.dev/",
-             bio: <p>This is a small Biography about my Own Portfolio made with the Framework React and JavaScrip</p>,
-         },
-         {
-             title: "3D Interior eines Notarzwagen",
-             //live: "https://github.com/Gustavo-Teleguario",
-             source: "https://www.youtube.com/@junkaiushi/videos",
-             videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
-             image: "https://download.blender.org/branding/community/blender_community_badge_white.svg",
-             hRef: "https://www.blender.org/",
-             bio: <p>This is a small Biography about a 3D-Model made with the Blender</p>,
-         },*/
+            image: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
+            hRef: "https://www.java.com/de/",
+            bio: <p>This is a small Biography about a small Program made with Java</p>,
+        },
+        {
+            title: "My own Portfolio",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://www.youtube.com/@junkaiushi/videos",
+           videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+            image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
+            hRef: "https://react.dev/",
+            bio: <p>This is a small Biography about my Own Portfolio made with the Framework React and JavaScrip</p>,
+        },
+        {
+            title: "3D Interior eines Notarzwagen",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: "https://www.youtube.com/@junkaiushi/videos",
+            videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
+            image: "https://download.blender.org/branding/community/blender_community_badge_white.svg",
+            hRef: "https://www.blender.org/",
+            bio: <p>This is a small Biography about a 3D-Model made with the Blender</p>,
+        },*/
     ],
 }
