@@ -15,7 +15,7 @@ const projects = [
 
 export default function Portfolio() {
     return (
-        <Box marginTop={'7em'} >
+        <Box marginTop={'7em'} maxHeight={'400vh'}>
             <Box sx={{width: '80%'}} marginLeft={'3em'}  >
                 <Typography variant="h3" gutterBottom style={{color: info.baseColorText}}>
                     Welcome to my Portfolio
@@ -54,7 +54,6 @@ export default function Portfolio() {
 
                 </Box>
             </Grid>
-
         </Box>
     );
 };

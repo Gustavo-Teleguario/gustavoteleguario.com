@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import Style from './BaseLayout.module.scss'
 import Navbar from "./Navbar";
 import Home from "./home/Home";
@@ -6,28 +6,62 @@ import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid} from "@mui/material";
-import HALO from 'vanta/dist/vanta.halo.min'
+import CELL from 'vanta/dist/vanta.cells.min'
+import {useLocation} from "react-router-dom";
 
 export default function BaseLayout() {
     const [isBoolean, setBoolean] = useState(false);
     let [darkMode, setDarkMode] = useState(true);
     const [vantaEffect, setVantaEffect] = useState(null)
     const myRef = useRef(null)
+    const location = useLocation()
+
+    useEffect(() => {
+        // Initialisieren des Vanta-Effekts
+        if (!vantaEffect) {
+            setVantaEffect(CELL({
+                el: myRef.current,
+                color1: 0x1e39b9,
+                color2: 0x3484e3,
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00
+            }));
+        }
+        // Bereinigen beim Komponentenabbau
+        return () => {
+            if (vantaEffect) {
+                setVantaEffect(vantaEffect.destroy());
+            }
+        };
+    }, [vantaEffect]);
 
     function handleToggleDarkMode() {
-        if (!vantaEffect && darkMode) {
-            setVantaEffect(HALO({
+        if (darkMode && vantaEffect) {
+            setVantaEffect(CELL({
                 el: myRef.current,
-                minWidth: 100.00,
-                backgroundColor: 0x0,
+                color1: 0x1e39b9,
+                color2: 0x3484e3,
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00
             }))
-            setBoolean(true);
-        } else if (darkMode && vantaEffect) {
-            setVantaEffect(vantaEffect.destroy())
+            setBoolean(true)
+            console.log("Condicion cumplida primer if");
+            setDarkMode(false);
+        } else if (!darkMode && vantaEffect) {
             setBoolean(false);
+            console.log("Condicion cumplida");
+            setVantaEffect(vantaEffect.destroy());
+            setDarkMode(true);
         }
     }
-
 
     /*  function handleToggleDarkMode() {
           let oppositeOfCurrentDarkMode = !darkMode;
@@ -59,8 +93,8 @@ export default function BaseLayout() {
       }, [vantaEffect])*/
 
     return (
-        <Box ref={myRef} className={darkMode ? Style.dark : myRef.current}>
-            <Grid container display={'flex'} flexDirection={'column'} minHeight={'205vh'}
+        <Box ref={myRef} className={darkMode ? Style.dark : myRef.current} minHeight={'100vh'}>
+            <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
                   justifyContent={'space-between'}>
                 <Grid item>
                     <Navbar darkMode={isBoolean} handleClick={handleToggleDarkMode}/>
