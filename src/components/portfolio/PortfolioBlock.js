@@ -8,7 +8,7 @@ import {Box} from "@mui/material";
 import {CardActions} from "@mui/joy";
 import IconLink from "./IconLink";
 
-export let colors = ["#d742e7", "#22252f","#0cefef"];
+export let colors = ["#3980c0", "#45bbbb","#3980c0"];
 function PortfolioBlock(props) {
 
     const {image, videoLink, source, title, href, text} = props;
@@ -45,7 +45,7 @@ function PortfolioBlock(props) {
                 <CardActions>
                     <Box fontSize={'1.5rem'} p={1} border={'2px solid white'} borderRadius={'25px'}
                          style={{
-                             background: `-webkit-linear-gradient(180deg, ${colors[0]}, ${colors[1]}, ${colors[2]})` // Gradient von Rot zu Blau
+                             background: `-webkit-linear-gradient(180deg, ${colors[0]}, ${colors[1]}, ${colors[2]})` // Button Color
                          }}>
                         <IconLink link={source} title={'Reference'} icon={'fa fa-code'}/>
                     </Box>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Style from './About.module.scss';
 import Terminal from "./Terminal";
-import {Box, Grid} from "@mui/material";
+import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 
 

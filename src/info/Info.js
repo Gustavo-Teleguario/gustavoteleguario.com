@@ -8,7 +8,7 @@ how to make this template work best for you! */
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
 //export let colors = ["#FFFFFF", "#0c7ded"];
-export let colorPortfolioText = ["rgb(4,245,148)"];
+export let colorPortfolioText = ["rgb(7,157,236)"];
 /*
 I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
 These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
