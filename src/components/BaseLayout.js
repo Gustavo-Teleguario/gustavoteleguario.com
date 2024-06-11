@@ -5,7 +5,7 @@ import Home from "./home/Home";
 import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
 import {Route, Routes} from "react-router-dom";
-import {Box, Grid} from "@mui/material";
+import {Box, Grid, useMediaQuery, useTheme} from "@mui/material";
 
 
 export default function BaseLayout() {
@@ -15,10 +15,21 @@ export default function BaseLayout() {
         setDarkMode(!darkMode);
     }
 
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
     return (
-        <Box className={darkMode ? Style.dark : Style.light}>
-            <Grid container display={'flex'} flexDirection={'column'} minHeight={'205vh'}
-                  justifyContent={'space-between'}>
+        <Box className={darkMode ? Style.dark : Style.light} sx={{
+            width: '100%', // Vollbild-Breite
+            padding: isMobile ? '1rem' : '2rem', // Unterschiedliche Polsterung für mobile und Desktop-Ansicht
+            boxSizing: 'border-box' // Stellen Sie sicher, dass Padding und Border in der Breite enthalten sind
+        }}>
+            <Grid container
+                  display={'flex'}
+                  minHeight={'100vh'}
+                  flexDirection={'column'}
+                  alignItems={'center'}
+                  justifyContent={'space-between'}
+            >
                 <Grid item>
                     <Navbar darkMode={darkMode} handleClick={handleClick}/>
                 </Grid>
