@@ -62,19 +62,19 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: <p> "Hello World" my name is Gustavo Teleguario I am 35 years old, and I from beautiful <a href={'https://www.google.com/maps/place/Guatemala/@15.7228485,-90.2348,7z/data=!3m1!4b1!4m6!3m5!1s0x8588135036e7506b:0x35982b375b84d5bb!8m2!3d15.783471!4d-90.230759!16zL20vMDM0NV8?entry=ttu'}>Guatemala</a>.
-        I discovered my passion for computer science at <a href={'https://www.uni-kassel.de/uni/studium/informatik-bachelor'}>University of Kassel</a>, where I had a lot of fun. One of my
-        outstanding qualities is my ability to adapt to any situation and my strong communication skills, which allow me
-        to effectively interact with people from diverse backgrounds.
+    bio: <p> "Hello World" my name is Gustavo Teleguario I am 35 years old, and I come from the beautiful <a href={'https://www.google.com/maps/place/Guatemala/@15.7228485,-90.2348,7z/data=!3m1!4b1!4m6!3m5!1s0x8588135036e7506b:0x35982b375b84d5bb!8m2!3d15.783471!4d-90.230759!16zL20vMDM0NV8?entry=ttu'}>Guatemala</a>.
+        My passion for computer science was ignited during my time at the <a href={'https://www.uni-kassel.de/uni/studium/informatik-bachelor'}>University of Kassel</a>
+        in Germany, where I applied my skills and knowledge to gain a wealth of both positive and challenging experiences. One of my most outstanding qualities is
+        my ability to adapt to any situation and environment, along with great communication skills that allow me to interact effectively with people
+        from diverse backgrounds and cultures.
 
-        My passion lies in computer graphics as well as software and web development. I am always eager to continue
-        developing myself in these areas and to acquire new skills.
+        My technological passions are computer graphics, software development and web development. Over the past 12 years I have accumulated diverse work
+        experiences in the fields of computer graphics, software development and web development in various companies. I continue to apply my motivation
+        and energy to these areas to keep growing professionally. I am always willing to learn, take on new challenges and responsibilities as a professional,
+        taking advantage of my experience and acquired knowledge.
 
-        Over the past 12 years here in Germany, I have gained diverse experiences in various companies and continue to
-        apply my motivation and energy to continuously develop myself. I am always keen to take on new challenges and
-        expand my knowledge.
+        Beyond my professional endeavors, I dedicate time to my beloved hobbies, which are an integral part of my personality.
 
-        Outside of my professional activities I dedicate time to my favorite hobbies, which are a fundamental part of my personality.
     </p>,
 
     knowledge: [{
