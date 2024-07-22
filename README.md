@@ -1,3 +1,3 @@
-# React personal Portfolio Template 
+My personal portfolio to showcase my personal projects.
 
-a simple personal portfolio template
+[View Live](https://www.gustavoteleguario.com)
