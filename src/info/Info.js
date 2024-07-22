@@ -62,8 +62,8 @@ export const info = {
 // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: <p> "Hello World" my name is Gustavo Teleguario I am 35 years old, and I come from the beautiful <a href={'https://www.google.com/maps/place/Guatemala/@15.7228485,-90.2348,7z/data=!3m1!4b1!4m6!3m5!1s0x8588135036e7506b:0x35982b375b84d5bb!8m2!3d15.783471!4d-90.230759!16zL20vMDM0NV8?entry=ttu'}>Guatemala</a>.
-        My passion for computer science was ignited during my time at the <a href={'https://www.uni-kassel.de/uni/studium/informatik-bachelor'}>University of Kassel</a>
+    bio: <p> "Hello World" my name is Gustavo Teleguario I am 35 years old, and I come from <a href={'https://www.google.com/maps/place/Guatemala/@15.7228485,-90.2348,7z/data=!3m1!4b1!4m6!3m5!1s0x8588135036e7506b:0x35982b375b84d5bb!8m2!3d15.783471!4d-90.230759!16zL20vMDM0NV8?entry=ttu'}>Guatemala</a>.
+        My passion for computer science was ignited during my time at the <a href={'https://www.uni-kassel.de/uni/studium/informatik-bachelor'}>University of Kassel </a>
         in Germany, where I applied my skills and knowledge to gain a wealth of both positive and challenging experiences. One of my most outstanding qualities is
         my ability to adapt to any situation and environment, along with great communication skills that allow me to interact effectively with people
         from diverse backgrounds and cultures.
@@ -78,9 +78,9 @@ export const info = {
     </p>,
 
     knowledge: [{
-        proficientWith: ['Java', 'C#', 'C++', 'Javascript', 'HTML', 'CSS'],
+        proficientWith: ['Java', 'C#/C++', 'Javascript', 'HTML', 'CSS'],
         exposedTo: ['Database', 'Frameworks', 'AI'],
-        tools: ['Git', 'LaTeX', 'Docker', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'Unreal Engine', 'Unity', 'Microsoft Office', 'Matrix42 Service Management'],
+        tools: ['Git','Gradle', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'LaTeX', 'Unreal Engine', 'Unity', 'Microsoft Office', 'Matrix42 Service Management'],
         frameworks: ['Vue.js', 'React']
 
     }]
