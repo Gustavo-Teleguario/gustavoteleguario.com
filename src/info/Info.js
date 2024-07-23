@@ -116,10 +116,10 @@ export const info = {
                 label: 'programming',
                 emoji: '👨‍💻'
             },
-            {
+          /*  {
                 label: 'problem solving',
                 emoji: '🤝'
-            },
+            },*/
             {
                 label: 'computer repair technician',
                 emoji: '🖥️',
@@ -128,30 +128,30 @@ export const info = {
                 label: 'hand soldering',
                 emoji: '⚡',
             },
-            {
+           /* {
                 label: 'effective communication',
                 emoji: '📢'
-            },
+            },*/
             {
                 label: 'drawing',
                 emoji: '🖍️'
             },
-            {
+           /* {
                 label: 'adaptability',
                 emoji: '👩🏾‍🤝‍👨🏻'
-            },
-            {
+            },*/
+            /*{
                 label: 'teamwork',
                 emoji: '💪'
-            }
+            }*/
 
         ],
 
         interest: [
-            {
+           /* {
                 label: 'Learning',
                 emoji: '📚'
-            },
+            },*/
             {
                 label: 'Technology',
                 emoji: '🤖'
@@ -160,28 +160,28 @@ export const info = {
                 label: 'Health',
                 emoji: '🧬'
             },
-            {
+           /* {
                 label: 'Universe',
                 emoji: '🌌'
-            },
+            },*/
             {
                 label: 'Nature',
                 emoji: '🌴'
             },
 
-            {
+            /*{
                 label: 'Animals',
                 emoji: '🐢'
-            },
+            },*/
 
             {
                 label: 'Languages',
                 emoji: '🗣️'
             },
-            {
+           /* {
                 label: 'psychology',
                 emoji: '🧠'
-            }
+            }*/
         ],
     }],
 
@@ -245,7 +245,7 @@ export const info = {
 
         },
         {
-            title: "Custom Report LeanIX",
+            title: "Custom Report SAP-LeanIX",
             //live: "https://github.com/Gustavo-Teleguario",
             source: "https://github.com/Gustavo-Teleguario/Network-Graph-Custom-Report-",
             videoLink: "https://www.youtube.com/embed/vxghGxuAWac?si=O1RY_O2JI0MOjze-",
