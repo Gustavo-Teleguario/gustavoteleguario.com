@@ -9,16 +9,16 @@ import {info} from "../../info/Info";
 
 
 const bioBullets = [
-    {
+   /* {
         emoji: '☕',
         text: 'I love coffee',
         link:"https://espressocoffeeguide.com/gourmet-coffee/coffees-of-the-americas/guatemala-coffee/"
-    },
-    {
+    },*/
+    /*{
         emoji: '🌎',
         text: 'based in Germany',
         link:"https://www.kassel.de/buerger/kunst_und_kultur/documenta.php"
-    },
+    },*/
     {
         emoji: "💼",
         text: "Open to work",
@@ -41,7 +41,7 @@ export default function Home() {
          <Box>
             <h1>Hi, I'm <span style={{background: info.gradient, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'}}>{info.firstName}</span><span className={Style.hand}>🤚</span>
             </h1>
-            <h2>I'm {info.position}.</h2>
+            <h2> {info.position}.</h2>
             <Box component={'ul'} p={'0.8rem'}>
                 {bioBullets.map((bio, index) => (
                     <li key={index}>

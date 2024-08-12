@@ -25,7 +25,7 @@ of what each of the values mean.
 export const info = {
     firstName: "Gustavo",
     lastName: "Teleguario",
-    position: "passionate about Technology",
+    position: "Junior Developer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors[1]}, ${colors[0]}, ${colors[1]})`, // don't change this either
     baseColor: colors[0],
@@ -33,7 +33,7 @@ export const info = {
 
     socials: [
         {
-            link: "https://drive.google.com/file/d/1yg5EZ5lJXvy6ijwGfhxoP5TvuoqNAuDc/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1TJiPl8WiRzQHmTMLf2_bYBWFoX2WfGWO/view?usp=sharing",
             icon: 'fa fa-file-pdf-o',
             label: 'CV'
         },
@@ -78,9 +78,9 @@ export const info = {
     </p>,
 
     knowledge: [{
-        proficientWith: ['Java', 'C#/C++', 'Javascript', 'HTML', 'CSS'],
-        exposedTo: ['Database', 'Frameworks', 'AI'],
-        tools: ['Git','Gradle', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'LaTeX', 'Unreal Engine', 'Unity', 'Microsoft Office', 'Matrix42 Service Management'],
+        proficientWith: ['Java', 'C#/C++', 'Javascript'],
+        exposedTo: ['Front & Back-End', 'Mobile Development'],
+        tools: ['Git','Gradle', 'Visual Studio', 'JetBrains ToolBox', 'Blender', 'LaTeX', 'Unreal Engine', 'Unity', 'Microsoft Office'],
         frameworks: ['Vue.js', 'React']
 
     }]
@@ -156,28 +156,29 @@ export const info = {
                 label: 'Technology',
                 emoji: '🤖'
             },
-            {
+            /*{
                 label: 'Health',
                 emoji: '🧬'
-            },
+            },*/
            /* {
                 label: 'Universe',
                 emoji: '🌌'
             },*/
             {
+                label: 'Languages',
+                emoji: '🗣️'
+            },
+           /* {
                 label: 'Nature',
                 emoji: '🌴'
-            },
+            },*/
 
             /*{
                 label: 'Animals',
                 emoji: '🐢'
             },*/
 
-            {
-                label: 'Languages',
-                emoji: '🗣️'
-            },
+
            /* {
                 label: 'psychology',
                 emoji: '🧠'
