@@ -3,6 +3,7 @@ import PortfolioBlock from "./PortfolioBlock";
 import {Box, Grid, Typography} from "@mui/material";
 import {info} from "../../info/Info";
 import mocktra from "../../img/Mock-tra.png"
+import mocDemostratortra from "../../img/Mock-Up-Dem-tra.PNG"
 import PortfolioMockUp from "./PortfolioMockUp";
 
 const projects = [
@@ -11,6 +12,11 @@ const projects = [
         source: "https://github.com/Gustavo-Teleguario/portfolio-page",
         title: "React Portfolio"
     },
+    {
+        image: mocDemostratortra,
+        //source: "https://github.com/Gustavo-Teleguario/portfolio-page",
+        title: "React Demostrator"
+    }
 ]
 
 export default function Portfolio() {

@@ -9,6 +9,7 @@ import {CardActions} from "@mui/joy";
 import IconLink from "./IconLink";
 
 export let colors = ["#3980c0", "#45bbbb","#3980c0"];
+export let colorsMockUp = ["#6c29f5", "#e8eeee","#6c29f5"];
 function PortfolioBlock(props) {
 
     const {image, videoLink, source, title, href, text} = props;
