@@ -1,7 +1,7 @@
 import React from 'react';
 import IconLink from "./IconLink";
 import {Box} from "@mui/material";
-import {colors, colorsMockUp} from "./PortfolioBlock";
+import {colorsMockUp} from "./PortfolioBlock";
 
 function PortfolioMockUp(props) {
 

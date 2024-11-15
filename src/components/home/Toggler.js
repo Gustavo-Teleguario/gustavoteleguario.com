@@ -7,7 +7,7 @@ export default function Toggler({darkMode, handleClick}) {
     const transition = 'all 250ms ease'
 
     return (
-        <Box fontSize={'1.5rem'}
+        <Box fontSize={'1rem'}
              sx={{cursor: 'pointer', ":hover": {transform: 'translateY(-3px)', transition: transition}}}>
             {
                 darkMode ?
