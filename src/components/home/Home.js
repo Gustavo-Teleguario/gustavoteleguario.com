@@ -4,7 +4,7 @@ import me from '../../img/self.png';
 import classNames from 'classnames';
 import EmojiBullet from "./EmojiBullet";
 import SocialIcon from "./SocialIcon";
-import {Box} from "@mui/material";
+import {Box, Typography} from "@mui/material";
 import {info} from "../../info/Info";
 
 
@@ -22,7 +22,7 @@ const bioBullets = [
     {
         emoji: "💼",
         text: "Open to work",
-        link:""
+        link:"https://www.youtube.com/@gustavoteleguario"
     },
     {
         emoji: "📧",
@@ -49,11 +49,16 @@ export default function Home() {
                     </li>
                 ))}
             </Box>
-            <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}}>
-               {info.socials.map((social, index) => (
-                  <SocialIcon key={index} link={social.link} icon={social.icon} label={social.label} />
-               ))}
-            </Box>
+             <Box display={'flex'} gap={'1.5rem'} justifyContent={'center'} fontSize={{xs: '2rem', md: '2.5rem'}}>
+                 {info.socials.map((social, index) => (
+                     <Box key={index} display="flex" flexDirection="column" alignItems="center">
+                         <SocialIcon link={social.link} icon={social.icon} label={social.label} />
+                     <Typography variant="caption" fontSize="1rem" mt={1}>
+                             {social.label.toUpperCase()} {/* Text unter der Icon */}
+                         </Typography>
+                     </Box>
+                 ))}
+             </Box>
          </Box>
       </Box>
    )

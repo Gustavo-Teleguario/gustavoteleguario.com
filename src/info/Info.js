@@ -32,7 +32,7 @@ export const info = {
     socials: [
         {
             link:
-                'https://drive.google.com/file/d/1U_FYG4TjhFQjd367iEcDDJjQrESY3eba/view?usp=sharing',
+                'https://drive.google.com/file/d/1Xo30tkSNUDejvmdxnj4pWfySXGuIcjkl/view?usp=sharing',
             icon: 'fa fa-file-pdf-o',
             label: 'CV',
         },
@@ -44,7 +44,7 @@ export const info = {
         {
             link: 'https://gitlab.com/Gustavo-Teleguario',
             icon: 'fa fa-gitlab',
-            label: 'facebook',
+            label: 'GitLab',
         },
         {
             link:
@@ -55,7 +55,7 @@ export const info = {
         {
             link: 'https://www.xing.com/profile/MaynorGustavo_TeleguarioQueche/cv',
             icon: 'fa fa-xing',
-            label: 'instagram',
+            label: 'Xing',
         },
 
         // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
@@ -64,7 +64,7 @@ export const info = {
     bio: (
         <p>
             {' '}
-            "Hello World" my name is Gustavo Teleguario a passionate developer from{' '}
+            "Hello World" my name is Gustavo, a passionate developer from{' '}
             <a
                 href={
                     'https://www.google.com/maps/place/Guatemala/@15.7228485,-90.2348,7z/data=!3m1!4b1!4m6!3m5!1s0x8588135036e7506b:0x35982b375b84d5bb!8m2!3d15.783471!4d-90.230759!16zL20vMDM0NV8?entry=ttu'
@@ -72,22 +72,24 @@ export const info = {
             >
                 Guatemala,{' '}
             </a>
-            36 years old. Through my experiences abroad and in my home country, I have
-            learned to be empathetic, open and a strong team player. During my studies
-            in Computer Science at the{' '}
+            Through my international professional journey, I have learned to be empathetic, open-minded, and a true team player.
+
+            My enthusiasm lies in software development and IT support, fields in which I continuously strive
+            to grow and improve. Thanks to my studies in computer science at the{' '}
             <a href={'https://www.uni-kassel.de/uni/studium/informatik-bachelor'}>
                 University of Kassel{' '}
             </a>
-            in Germany, I gained valuable experience in software and web development,
-            SAP, and IT management. In my free time, I enjoy developing new ideas and
-            am known for my friendly and helpful nature.
+            in Germany and my professional experience in various companies, I have been able to deepen my
+            skills and live out my passion in real-world settings.
+            I value exchanging ideas with other professionals and am always eager to learn new things. In my free time, I enjoy developing new
+            ideas and pursuing my favorite hobbies.
         </p>
     ),
 
     knowledge: [
         {
-            proficientWith: ['Java & C#', 'React', 'WordPress'],
-            exposedTo: ['SAP-Technologie', 'Front & Back-End', 'AI'],
+            proficientWith: ['Remote Support','Java & C#', 'React & WordPress'],
+            exposedTo: ['IT-Service-Management','SAP-Technologie', 'Front & Back-End', 'AI',],
             tools: [
                 'Git',
                 'GitHub',
@@ -120,6 +122,10 @@ export const info = {
                     label: 'travel',
                     emoji: '✈',
                 },
+                {
+                    label: 'drawing',
+                    emoji: '🖍️',
+                }
             ],
 
             skills: [
@@ -132,7 +138,7 @@ export const info = {
                         emoji: '🤝'
                     },*/
                 {
-                    label: 'computer repair technician',
+                    label: 'IT-Support to End Users',
                     emoji: '🖥️',
                 },
                 /* {
@@ -144,9 +150,13 @@ export const info = {
                     emoji: '📢',
                 },
                 {
+                    label: 'Social Competence',
+                    emoji: '🤝',
+                },
+               /* {
                     label: 'drawing',
                     emoji: '🖍️',
-                },
+                },*/
                 /* {
                         label: 'adaptability',
                         emoji: '👩🏾‍🤝‍👨🏻'
