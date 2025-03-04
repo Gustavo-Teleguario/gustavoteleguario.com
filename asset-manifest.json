@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.30787833.css",
-    "main.js": "/static/js/main.6f8e1234.js",
+    "main.js": "/static/js/main.f1822ca7.js",
     "static/media/self.png": "/static/media/self.ed6ee420c2612c064764.png",
     "static/media/Mock-Up-Dem-tra.PNG": "/static/media/Mock-Up-Dem-tra.4ce7ad502894b52bad66.PNG",
     "static/media/Mock-tra.png": "/static/media/Mock-tra.2382ab4d5d7176ba9b3a.png",
     "index.html": "/index.html",
     "main.30787833.css.map": "/static/css/main.30787833.css.map",
-    "main.6f8e1234.js.map": "/static/js/main.6f8e1234.js.map"
+    "main.f1822ca7.js.map": "/static/js/main.f1822ca7.js.map"
   },
   "entrypoints": [
     "static/css/main.30787833.css",
-    "static/js/main.6f8e1234.js"
+    "static/js/main.f1822ca7.js"
   ]
 }
