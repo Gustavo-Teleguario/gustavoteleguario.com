@@ -4,6 +4,7 @@ import {Box, Grid, Typography} from "@mui/material";
 import {info} from "../../info/Info";
 import mocktra from "../../img/Mock-tra.png"
 import mocDemostratortra from "../../img/Mock-Up-Dem-tra.PNG"
+import moc3DInteriorCar from "../../img/3D-ModellingTransparent.PNG"
 import PortfolioMockUp from "./PortfolioMockUp";
 
 const projects = [
@@ -15,13 +16,19 @@ const projects = [
     {
         image: mocDemostratortra,
         //source: "https://github.com/Gustavo-Teleguario/portfolio-page",
-        title: "React Demostrator"
+        title: "React Demonstrator"
+    },
+    {
+        image: moc3DInteriorCar,
+        source: "https://drive.google.com/file/d/12OFFc-Ts_9HhL4i9CcZxngLTB7Ta9Ej1/view?usp=sharing",
+        title: "Blender 3D Interior Car"
     }
+
 ]
 
 export default function Portfolio() {
     return (
-        <Box marginTop={'7em'} maxHeight={'400vh'}>
+        <Box marginTop={'7em'} maxHeight={'400vh'} >
             <Box sx={{width: '80%'}} marginLeft={'3em'}  >
                 <Typography variant="h3" gutterBottom style={{color: info.baseColorText}}>
                     Welcome to my Portfolio
@@ -50,14 +57,13 @@ export default function Portfolio() {
                     <Typography style={{fontSize: '25px'}} variant="body1" gutterBottom>
                         Here you can find some examples of my projects in Mockup form as well.
                     </Typography>
-                    <Grid container display={'flex'} justifyContent={'center'}>
+                    <Grid container display={'flex'} justifyContent={'revert'}>
                         {projects.map((project, index) => (
                             <Grid item xs={12} md={6} key={index}>
                                 <PortfolioMockUp image={project.image} source={project.source} title={project.title}/>
                             </Grid>
                         ))}
                     </Grid>
-
                 </Box>
             </Grid>
         </Box>

@@ -27,6 +27,11 @@ const links = [
         name: 'Portfolio',
         to: '/portfolio',
         active: 'portfolio'
+    },
+    {
+        name: 'Art Gallery', // New link for Art Gallery
+        to: '/art-gallery', // Route to the Art Gallery component
+        active: 'art-gallery' // Active state for the Art Gallery
     }
 ]
 

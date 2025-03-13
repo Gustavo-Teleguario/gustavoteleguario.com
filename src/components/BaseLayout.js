@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Home from "./home/Home";
 import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
+import ArtGallery from './artgallery/ArtGallery'; // Import the new component
 import {Route, Routes} from "react-router-dom";
 import {Box, Grid, useMediaQuery, useTheme} from "@mui/material";
 
@@ -38,6 +39,7 @@ export default function BaseLayout() {
                         <Route exact path={'/'} element={<Home/>}/>
                         <Route exact path={'/about'} element={<About/>}/>
                         <Route exact path={'/portfolio'} element={<Portfolio/>}/>
+                        <Route path="/art-gallery" element={<ArtGallery />} /> {/* Add this new route */}
                     </Routes>
                 </Grid>
                 <Grid item>

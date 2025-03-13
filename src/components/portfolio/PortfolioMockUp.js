@@ -17,7 +17,7 @@ function PortfolioMockUp(props) {
                     <Box p={1.5} border={'2px solid white'} borderRadius={'25px'}  style={{
                         background: `-webkit-linear-gradient(180deg, ${colorsMockUp[0]}, ${colorsMockUp[1]}, ${colorsMockUp[2]})` // Button Color
                     }}>
-                        <IconLink link={source} title={'Source Code'} icon={'fa fa-code'}/>
+                        <IconLink link={source} title={'Project Details'} icon={'fa fa-code'}/>
                     </Box>}
             </Box>
         </Box>
