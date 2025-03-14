@@ -2,7 +2,11 @@
     display: flex;
     flex-wrap: wrap; /* Ermöglicht das Umbrechen von Elementen */
     justify-content: center; /* Zentriert die Elemente horizontal */
-    padding: 20px;
+    background: url('/public/images/background.jpg') no-repeat center center; /* Add your background image */
+    background-size: cover; /* Ensure the background covers the entire container */
+    transform: rotate(360deg); /* Rotate the container */
+    height: 1400px;
+    padding: 100px;
 }
 
 .art-item {
@@ -13,6 +17,12 @@
 
 @media (max-width: 768px) {
     .art-item {
-        width: 100%; /* Volle Breite auf Mobilgeräten */
+        width: 45%; /* Breite für Tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .art-item {
+        width: 100%; /* Volle Breite für Mobilgeräte */
     }
 }

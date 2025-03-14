@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
 import {Typography} from '@mui/material';
-import {info} from '../../info/Info';
 import albums from '../../data/albums.json';
 import './ArtGallery.css'; // Import the CSS file
 
@@ -17,18 +16,13 @@ const ArtGallery = () => {
         setIsOpen(true);
     };
 
+
     return (
-        <div className="art-gallery-container" style={{
-            padding: '2rem',
-            textAlign: 'center',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center'
-        }}>
-            <Typography variant="h3" gutterBottom style={{color: info.baseColorText}}>
+        <div className="art-gallery-container">
+            <Typography variant="h3" gutterBottom style={{ color: '#a0dbef' }}>
                 Where Computer Science Meets Creativity
             </Typography>
-            <Typography style={{fontSize: '25px', textAlign: 'left'}} variant="body1" gutterBottom>
+            <Typography style={{ fontSize: '25px', textAlign: 'left', color: 'white' }} variant="body1" gutterBottom>
                 Welcome and thank you for visiting my "Art Gallery" portfolio. In this section, you'll discover my
                 drawings and oil paintings that showcase my artistic journey. While pursuing my studies in computer
                 science, creativity and art have remained my passionate companions. I cherish the moments I spend
@@ -54,13 +48,23 @@ const ArtGallery = () => {
                 }}
             >
                 {albums.map((album, albumIndex) => (
-                    <div key={albumIndex} style={{cursor: 'pointer', width: '100%', height: '300px'}}>
-                        <Typography variant="h5" align="center" style={{marginBottom: '1rem'}}>
+                    <div key={albumIndex} style={{ cursor: 'pointer', width: '100%', height: '300px', color: 'white' }}>
+                        <Typography
+                            variant="h5"
+                            align="center"
+                            style={{
+                                marginBottom: '2rem',
+                                color: '#9fe1f4',
+                                fontFamily: 'Roboto, sans-serif',
+                                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+                                letterSpacing: '2px'
+                            }}
+                        >
                             {album.title}
                         </Typography>
-                        <div onClick={() => openLightbox(album.images, 0)} style={{height: '100%'}}>
+                        <div onClick={() => openLightbox(album.images, 0)} style={{ height: '100%' }}>
                             <img src={album.images[0].imgSrc} alt={album.title}
-                                 style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '10px'}}/>
+                                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '10px' }} />
                         </div>
                     </div>
                 ))}
