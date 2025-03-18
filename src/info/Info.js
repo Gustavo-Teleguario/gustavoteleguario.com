@@ -23,7 +23,7 @@ of what each of the values mean.
 export const info = {
     firstName: 'Gustavo',
     lastName: 'Teleguario',
-    position: 'Junior Developer',
+    position: 'IT Specialist – Application Development',
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors[1]}, ${colors[0]}, ${colors[1]})`, // don't change this either
     baseColor: colors[0],
@@ -62,7 +62,7 @@ export const info = {
         // Just change the links so that they lead to your social profiles.
     ],
     bio: (
-        <p>
+        <p style={{textAlign: 'justify'}}>
             {' '}
             "Hello World" my name is Gustavo, a passionate developer from{' '}
             <a
@@ -72,7 +72,8 @@ export const info = {
             >
                 Guatemala,{' '}
             </a>
-            Through my international professional journey, I have learned to be empathetic, open-minded, and a true team player.
+            Through my international professional journey, I have learned to be empathetic, open-minded, and a true team
+            player.
 
             My enthusiasm lies in software development and IT support, fields in which I continuously strive
             to grow and improve. Thanks to my studies in computer science at the{' '}
@@ -81,15 +82,16 @@ export const info = {
             </a>
             in Germany and my professional experience in various companies, I have been able to deepen my
             skills and live out my passion in real-world settings.
-            I value exchanging ideas with other professionals and am always eager to learn new things. In my free time, I enjoy developing new
+            I value exchanging ideas with other professionals and am always eager to learn new things. In my free time,
+            I enjoy developing new
             ideas and pursuing my favorite hobbies.
         </p>
     ),
 
     knowledge: [
         {
-            proficientWith: ['Remote Support','Java & C#', 'React & WordPress'],
-            exposedTo: ['IT-Service-Management','SAP-Technologie', 'Front & Back-End', 'AI',],
+            proficientWith: ['Remote Support', 'Java & C#', 'React & WordPress'],
+            exposedTo: ['IT-Service-Management', 'SAP-Technologie', 'Front & Back-End', 'AI',],
             tools: [
                 'Git',
                 'GitHub',
@@ -133,45 +135,23 @@ export const info = {
                     label: 'programming',
                     emoji: '👨‍💻',
                 },
-                /*  {
-                        label: 'problem solving',
-                        emoji: '🤝'
-                    },*/
                 {
-                    label: 'IT-Support to End Users',
+                    label: 'IT-Support',
                     emoji: '🖥️',
                 },
-                /* {
-                  label: 'hand soldering',
-                  emoji: '⚡',
-                },*/
+
                 {
-                    label: 'Trilingual (Spanish,German,English)',
+                    label: 'Spanish, German ,English',
                     emoji: '📢',
                 },
                 {
                     label: 'Social Competence',
                     emoji: '🤝',
                 },
-               /* {
-                    label: 'drawing',
-                    emoji: '🖍️',
-                },*/
-                /* {
-                        label: 'adaptability',
-                        emoji: '👩🏾‍🤝‍👨🏻'
-                    },*/
-                /*{
-                        label: 'teamwork',
-                        emoji: '💪'
-                    }*/
+
             ],
 
             interest: [
-                /* {
-                        label: 'Learning',
-                        emoji: '📚'
-                    },*/
                 {
                     label: 'Technology',
                     emoji: '🤖',

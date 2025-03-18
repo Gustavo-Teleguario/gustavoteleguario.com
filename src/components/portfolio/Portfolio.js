@@ -2,9 +2,9 @@ import React from 'react';
 import PortfolioBlock from "./PortfolioBlock";
 import {Box, Grid, Typography} from "@mui/material";
 import {info} from "../../info/Info";
-import mocktra from "../../img/Mock-tra.png"
-import mocDemostratortra from "../../img/Mock-Up-Dem-tra.PNG"
-import moc3DInteriorCar from "../../img/3D-ModellingTransparent.PNG"
+import mocktra from "../../img/Mock-tra.png";
+import mocDemostratortra from "../../img/Mock-Up-Dem-tra.PNG";
+import moc3DInteriorCar from "../../img/3D-ModellingTransparent.PNG";
 import PortfolioMockUp from "./PortfolioMockUp";
 
 const projects = [
@@ -15,7 +15,7 @@ const projects = [
     },
     {
         image: mocDemostratortra,
-        //source: "https://github.com/Gustavo-Teleguario/portfolio-page",
+       // source: "https://github.com/Gustavo-Teleguario/portfolio-page",
         title: "React Demonstrator"
     },
     {
@@ -23,24 +23,20 @@ const projects = [
         source: "https://drive.google.com/file/d/12OFFc-Ts_9HhL4i9CcZxngLTB7Ta9Ej1/view?usp=sharing",
         title: "Blender 3D Interior Car"
     }
-
-]
+];
 
 export default function Portfolio() {
     return (
-        <Box marginTop={'7em'} maxHeight={'400vh'} >
-            <Box sx={{width: '80%'}} marginLeft={'3em'}  >
-                <Typography variant="h3" gutterBottom style={{color: info.baseColorText}}>
+        <Box marginTop={'7em'} maxHeight={'400vh'}>
+            <Box sx={{width: { xs: '90%', md: '80%' }}} marginLeft={{ xs: '1em', md: '3em' }}>
+                <Typography variant="h3" gutterBottom style={{color: info.baseColorText}} fontSize={{ xs: '2rem', md: '3rem' }}>
                     Welcome to my Portfolio
                 </Typography>
-                <Typography style={{fontSize: '25px'}} variant="body1" gutterBottom>
+                <Typography variant="body1" gutterBottom sx={{fontSize: { xs: '1rem', md: '1.5rem' }, textAlign: 'justify'}}>
                     "I'm delighted to have you visit my digital portfolio. Here, I showcase several projects in the form
-                    of
-                    short videos. These represent some of my successful endeavors developed during my studies. They span
-                    various
-                    technologies and programming languages I've mastered throughout my education. Enjoy watching, and
-                    remember to
-                    reach out if you have any questions. Feel free to contact me for further insights into my work.
+                    of short videos. These represent some of my successful endeavors developed during my studies. They span
+                    various technologies and programming languages I've mastered throughout my education. Enjoy watching, and
+                    remember to reach out if you have any questions. Feel free to contact me for further insights into my work.
                 </Typography>
             </Box>
             <Grid container display={'flex'} justifyContent={'center'}>
@@ -50,11 +46,11 @@ export default function Portfolio() {
                                         image={project.image} href={project.hRef} text={project.bio}/>
                     </Grid>
                 ))}
-                <Box sx={{width: '80%'}} marginLeft={'3em'} marginTop={'5em'}>
-                    <Typography variant="h3" gutterBottom style={{color: info.baseColorText}}>
+                <Box sx={{width: { xs: '90%', md: '80%' }}} marginLeft={{ xs: '1em', md: '3em' }} marginTop={'5em'}>
+                    <Typography variant="h3" gutterBottom style={{color: info.baseColorText}} fontSize={{ xs: '2rem', md: '3rem' }}>
                         Mockups
                     </Typography>
-                    <Typography style={{fontSize: '25px'}} variant="body1" gutterBottom>
+                    <Typography variant="body1" gutterBottom sx={{fontSize: { xs: '1rem', md: '1.5rem' }}}>
                         Here you can find some examples of my projects in Mockup form as well.
                     </Typography>
                     <Grid container display={'flex'} justifyContent={'revert'}>
@@ -68,4 +64,4 @@ export default function Portfolio() {
             </Grid>
         </Box>
     );
-};
+}

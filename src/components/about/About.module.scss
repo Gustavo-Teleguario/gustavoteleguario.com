@@ -7,43 +7,70 @@
 .green {
   color: $green;
 }
+
 .skills {
   border-collapse: collapse; /* Grenzen der Zellen zusammenführen */
   width: 100%;
+  margin: 1rem 0;
+
+  th, td {
+    padding: 0.5rem; /* Abstand innerhalb der Zellen anpassen */
+    text-align: center; /* Text zentrieren */
+  }
+
+  th {
+    background-color: $purple; /* Hintergrundfarbe für den Header */
+    color: $white;
+  }
+
+  td {
+    border: 1px solid $pink;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  li {
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    white-space: normal; /* Allow text to wrap */
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem; /* Schriftgröße verkleinern */
+    padding: 0.25rem; /* Abstand innerhalb der Zellen verkleinern */
+
+    th, td {
+      padding: 0.25rem; /* Abstand innerhalb der Zellen verkleinern */
+    }
+
+    th {
+      font-size: 0.9rem; /* Schriftgröße für Header verkleinern */
+    }
+
+    td {
+      font-size: 0.8rem; /* Schriftgröße für Zellen verkleinern */
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    li {
+      word-wrap: break-word;
+      white-space: normal;
+    }
+  }
 }
 
 .columnHeader,
 .column {
-  border: 1px solid white; /* Rahmen um die Zellen hinzufügen */
+  border: 1px solid #ffffff; /* Rahmen um die Zellen hinzufügen */
   padding: 8px; /* Abstand innerhalb der Zellen anpassen */
-  text-align: center; /* Text zentrieren */
+  text-align: left; /* Text zentrieren */
 }
 
-.columnHeader {
-  background-color: #8D53FF; /* Hintergrundfarbe für den Header */
-  color: white;
-}
 
-.hobbiesTable {
-  border-collapse: collapse;
-  width: 20%;
-}
-.columnHobie{
 
-  padding: 8px; /* Abstand innerhalb der Zellen anpassen */
-  text-align: center; /* Text zentrieren */
-  color: white;
-}
-
-/* In Style.module.css */
-.tablesContainer {
-  display: flex; /* Flexbox verwenden */
-  color: white;
-  padding: 8px;
-}
-
-.tableWrapper {
-  flex: 1; /* Gleiche Breite für beide Tabellen */
-  margin: 10px; /* Abstand zwischen den Tabellen */
-  padding: 8px;
-}

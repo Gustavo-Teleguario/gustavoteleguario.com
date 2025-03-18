@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
-import {Typography} from '@mui/material';
+import {Box, Typography} from '@mui/material';
 import albums from '../../data/albums.json';
-import './ArtGallery.css'; // Import the CSS file
+import './ArtGallery.css';
+
 
 const ArtGallery = () => {
     const [photoIndex, setPhotoIndex] = useState(0);
@@ -18,11 +19,17 @@ const ArtGallery = () => {
 
 
     return (
-        <div className="art-gallery-container">
-            <Typography variant="h3" gutterBottom style={{ color: '#a0dbef' }}>
+        <Box className="art-gallery-container" sx={{padding: {xs: '1em', md: '8em'}}}>
+            <Typography variant="h3" gutterBottom sx={{color: '#71d2e4', fontSize: {xs: '2rem', md: '3rem'}}}>
                 Where Computer Science Meets Creativity
             </Typography>
-            <Typography style={{ fontSize: '25px', textAlign: 'left', color: 'white' }} variant="body1" gutterBottom>
+            <Typography variant="body1" gutterBottom sx={{
+                fontSize: {xs: '1rem', md: '1.5rem'},
+                textAlign: 'justify',
+                color: 'white',
+                width: '100%'
+            }}>
+
                 Welcome and thank you for visiting my "Art Gallery" portfolio. In this section, you'll discover my
                 drawings and oil paintings that showcase my artistic journey. While pursuing my studies in computer
                 science, creativity and art have remained my passionate companions. I cherish the moments I spend
@@ -35,11 +42,13 @@ const ArtGallery = () => {
                 Each piece in this collection represents not just an artwork, but a moment where technical understanding
                 enhances artistic vision—where the analytical mind of a computer scientist meets the soul of an artist.
             </Typography>
-            <div
-                style={{
+            <Box
+                sx={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-                    gridAutoRows: 'minmax(300px, auto)',
+                    gridTemplateColumns: {
+                        xs: 'repeat(auto-fill, minmax(150px, 1fr))',
+                        md: 'repeat(auto-fill, minmax(300px, 1fr))'
+                    },
                     gap: '4rem',
                     rowGap: '6rem',
                     justifyItems: 'center',
@@ -48,27 +57,29 @@ const ArtGallery = () => {
                 }}
             >
                 {albums.map((album, albumIndex) => (
-                    <div key={albumIndex} style={{ cursor: 'pointer', width: '100%', height: '300px', color: 'white' }}>
+                    <Box key={albumIndex}
+                         sx={{cursor: 'pointer', width: '100%', height: {xs: '150px', md: '300px'}, color: 'white'}}>
                         <Typography
                             variant="h5"
                             align="center"
-                            style={{
+                            sx={{
                                 marginBottom: '2rem',
                                 color: '#9fe1f4',
                                 fontFamily: 'Roboto, sans-serif',
                                 textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-                                letterSpacing: '2px'
+                                letterSpacing: '2px',
+                                fontSize: {xs: '1rem', md: '1.5rem'}
                             }}
                         >
                             {album.title}
                         </Typography>
-                        <div onClick={() => openLightbox(album.images, 0)} style={{ height: '100%' }}>
+                        <Box onClick={() => openLightbox(album.images, 0)} sx={{height: '100%'}}>
                             <img src={album.images[0].imgSrc} alt={album.title}
-                                 style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '10px' }} />
-                        </div>
-                    </div>
+                                 style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '10px'}}/>
+                        </Box>
+                    </Box>
                 ))}
-            </div>
+            </Box>
 
             {isOpen && (
                 <Lightbox
@@ -86,7 +97,7 @@ const ArtGallery = () => {
                     images={currentAlbumImages.map(art => art.imgSrc)}
                 />
             )}
-        </div>
+        </Box>
     );
 };
 

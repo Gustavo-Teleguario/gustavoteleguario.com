@@ -4,9 +4,8 @@ import Terminal from "./Terminal";
 import {Box} from "@mui/material";
 import {info} from "../../info/Info";
 
-
 export default function About() {
-    const firstName = info.firstName.toLowerCase()
+    const firstName = info.firstName.toLowerCase();
 
     function aboutMeText() {
         return <>
@@ -22,9 +21,9 @@ export default function About() {
     function skillsText() {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
-                programming-lenguages/tools
+                programming-languages/tools
             </p>
-            <p><span style={{color: info.baseColor}}>lenguages/tools <span
+            <p><span style={{color: info.baseColor}}>languages/tools <span
                 className={Style.green}>(main)</span> $</span> ls</p>
 
             <table className={Style.skills}>
@@ -33,7 +32,6 @@ export default function About() {
                     <th className={Style.columnHeader} style={{color: info.baseColor}}>Proficient With</th>
                     <th className={Style.columnHeader} style={{color: info.baseColor}}>Tools</th>
                     <th className={Style.columnHeader} style={{color: info.baseColor}}>Exposed To Learn</th>
-
                 </tr>
                 </thead>
                 <tbody>
@@ -80,7 +78,6 @@ export default function About() {
                     <th className={Style.columnHeader} style={{color: info.baseColor}}>Hobbies</th>
                     <th className={Style.columnHeader} style={{color: info.baseColor}}>Skills</th>
                     <th className={Style.columnHeader} style={{color: info.baseColor}}>Interest</th>
-
                 </tr>
                 </thead>
                 <tbody>
@@ -120,5 +117,5 @@ export default function About() {
             <Terminal text={skillsText()}/>
             <Terminal text={miscText()}/>
         </Box>
-    )
+    );
 }

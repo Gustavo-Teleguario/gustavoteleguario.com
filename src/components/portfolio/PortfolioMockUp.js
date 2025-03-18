@@ -1,27 +1,36 @@
 import React from 'react';
+import {Box, Typography} from "@mui/material";
+import {Card, CardContent, CardMedia, CardActions} from '@mui/material';
 import IconLink from "./IconLink";
-import {Box} from "@mui/material";
-import {colorsMockUp} from "./PortfolioBlock";
 
 function PortfolioMockUp(props) {
-
-    const {source, title, image} = props;
+    const {image, source, title} = props;
 
     return (
-        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
-            <Box component={'img'} src={image}/>
-            <h1 style={{fontSize: '2rem'}} >{title}</h1>
-            <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
-                 alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
-                {source &&
-                    <Box p={1.5} border={'2px solid white'} borderRadius={'25px'}  style={{
-                        background: `-webkit-linear-gradient(180deg, ${colorsMockUp[0]}, ${colorsMockUp[1]}, ${colorsMockUp[2]})` // Button Color
-                    }}>
-                        <IconLink link={source} title={'Project Details'} icon={'fa fa-code'}/>
-                    </Box>}
-            </Box>
+        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} marginTop={'5em'}>
+            <Card sx={{width: { xs: '100%', md: 645 }, boxShadow: 'lg'}}>
+                <CardMedia
+                    component="img"
+                    image={image}
+                    alt={title}
+                    sx={{minWidth: { xs: '100%', md: 350 }}}
+                />
+                <CardContent>
+                    <Typography gutterBottom variant="h5" component="div" sx={{fontSize: { xs: '1.5rem', md: '2.5rem' }}}>
+                        {title}
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Box fontSize={{ xs: '1rem', md: '1.5rem' }} p={1} border={'2px solid white'} borderRadius={'25px'}
+                         style={{
+                             background: `-webkit-linear-gradient(180deg, #6c29f5, #e8eeee, #6c29f5)`
+                         }}>
+                        <IconLink link={source} title={'Reference'} icon={'fa fa-code'}/>
+                    </Box>
+                </CardActions>
+            </Card>
         </Box>
     );
 }
 
-export default PortfolioMockUp
+export default PortfolioMockUp;
