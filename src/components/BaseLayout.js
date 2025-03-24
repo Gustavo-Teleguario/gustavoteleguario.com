@@ -45,13 +45,7 @@ export default function BaseLayout() {
                         <Route path='/art-gallery' element={<ArtGallery />} />
                     </Routes>
                 </Grid>
-                <Grid item xs={12} width="100%">
-                    <Box component='footer' display='flex' flexDirection='column' alignItems='center'
-                         py='1.5rem' sx={{ opacity: 0.7 }} width='100%'>
-                        <p>created with &hearts; by <a href='https://github.com/Gustavo-Teleguario'>Maynor Teleguario</a></p>
-                        <p>&copy; 2023</p>
-                    </Box>
-                </Grid>
+
             </Grid>
         </Box>
     );

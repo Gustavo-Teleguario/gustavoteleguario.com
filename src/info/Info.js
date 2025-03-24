@@ -32,7 +32,7 @@ export const info = {
     socials: [
         {
             link:
-                'https://drive.google.com/file/d/1BSam_g7gn2NLPoDD8x_NX4WghKijFtb3/view?usp=sharing',
+                'https://drive.google.com/file/d/1XJSVRLvs-IJtug-_TGT5xi2ytXQiSLdj/view?usp=sharing',
             icon: 'fa fa-file-pdf-o',
             label: 'CV',
         },
@@ -282,32 +282,5 @@ export const info = {
                 </p>
             ),
         },
-        /*{
-                title: "Software Engineering I",
-                //live: "https://github.com/Gustavo-Teleguario",
-                source: "https://www.youtube.com/@junkaiushi/videos",
-                videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
-                image: "https://www.vectorlogo.zone/logos/java/java-icon.svg",
-                hRef: "https://www.java.com/de/",
-                bio: <p>This is a small Biography about a small Program made with Java</p>,
-            },
-            {
-                title: "My own Portfolio",
-                //live: "https://github.com/Gustavo-Teleguario",
-                source: "https://www.youtube.com/@junkaiushi/videos",
-               videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
-                image: "https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg",
-                hRef: "https://react.dev/",
-                bio: <p>This is a small Biography about my Own Portfolio made with the Framework React and JavaScrip</p>,
-            },
-            {
-                title: "3D Interior eines Notarzwagen",
-                //live: "https://github.com/Gustavo-Teleguario",
-                source: "https://www.youtube.com/@junkaiushi/videos",
-                videoLink: "https://www.youtube.com/embed/9Q6zqqhzjJo?si=YOeEqcD12gqsBdT1",
-                image: "https://download.blender.org/branding/community/blender_community_badge_white.svg",
-                hRef: "https://www.blender.org/",
-                bio: <p>This is a small Biography about a 3D-Model made with the Blender</p>,
-            },*/
     ],
 }

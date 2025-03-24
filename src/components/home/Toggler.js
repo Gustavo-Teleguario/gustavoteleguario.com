@@ -11,12 +11,12 @@ export default function Toggler({darkMode, handleClick}) {
              sx={{cursor: 'pointer', ":hover": {transform: 'translateY(-3px)', transition: transition}}}>
             {
                 darkMode ?
-                    <span onClick={handleClick} aria-label="Full Moon" role="img" style={{fontSize: '2rem'}}>
+                    <span onClick={handleClick} aria-label="GermanFlag" role="img" style={{fontSize: '2rem'}}>
                 <Svg icon="germanFlag" width="80" height="80"/>
 
                 </span>
                     :
-                    <span onClick={handleClick} aria-label="New Moon" role="img" style={{fontSize: '2rem'}}>
+                    <span onClick={handleClick} aria-label="GuateFlag" role="img" style={{fontSize: '2rem'}}>
                          <Svg icon="guatemalaFlag" width="80" height="80"/>
                     </span>
 
