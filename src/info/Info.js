@@ -91,7 +91,7 @@ export const info = {
     knowledge: [
         {
             proficientWith: ['Remote Support', 'Java & C#', 'React & WordPress'],
-            exposedTo: ['IT-Service-Management', 'SAP-Technologie', 'Front & Back-End', 'AI',],
+            exposedTo: ['Project Management','Front & Back-End', 'AI',],
             tools: [
                 'Git',
                 'GitHub',
@@ -120,10 +120,10 @@ export const info = {
                     label: 'guitar',
                     emoji: '🎸',
                 },
-                {
+                /*{
                     label: 'travel',
                     emoji: '✈',
-                },
+                },*/
                 {
                     label: 'drawing',
                     emoji: '🖍️',

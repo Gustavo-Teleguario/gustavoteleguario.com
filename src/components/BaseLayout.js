@@ -35,7 +35,7 @@ export default function BaseLayout() {
                   flexGrow={1}
             >
                 <Grid item xs={12}>
-                    <Navbar darkMode={darkMode} handleClick={handleClick} />
+                    <Navbar darkMode={darkMode} handleClick={handleClick}   />
                 </Grid>
                 <Grid item xs={12} flexGrow={1} width="100%">
                     <Routes>
