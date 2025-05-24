@@ -17,30 +17,15 @@ Diese Anleitung hilft dir, eine Kopie des Projekts auf deinem lokalen Rechner zu
 
 ### Voraussetzungen
 
-- Node.js
+- Node.js (Version 14 oder höher)
 - npm (Node Package Manager) oder Yarn
 
 ### Installation
 
 1. **Repository klonen**
-
    ```bash
    git clone https://github.com/yourusername/react-portfolio.git
-   In das Projektverzeichnis navigieren
-bash
 
-cd react-portfolio
-
-Abhängigkeiten installieren
-bash
-
-npm install
-
-Anwendung ausführen
-bash
-
-    npm start
-
-Live ansehen
-
-Öffne http://localhost:3000 in deinem Browser.
+   1. **Repository klonen**
+   ```bash
+   git clone https://github.com/yourusername/react-portfolio.git
