@@ -27,9 +27,10 @@ Diese Anleitung hilft dir, eine Kopie des Projekts auf deinem lokalen Rechner zu
    ```bash
    git clone https://github.com/yourusername/react-portfolio.git
 2. **In das Projektverzeichnis navigieren**
+  ```bash
 cd react-portfolio
 
-3. **Abhängigkeiten installieren**
+4. **Abhängigkeiten installieren**
 npm install
 
 ### Anwendung ausführen
