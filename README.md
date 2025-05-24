@@ -37,15 +37,13 @@ Diese Anleitung hilft dir, eine Kopie des Projekts auf deinem lokalen Rechner zu
    yarn install
 
 
-1. **Anwendung starten**
+4. **Anwendung starten**
+   ```bash
    npm start
    # oder mit Yarn:
    yarn start
+   
+5. **Live ansehen**
+  Nach dem Start des Entwicklungsservers öffne http://localhost:PORT in deinem Browser.
 
-1. **Repository klonen**
-   ```bash
-   git clone https://github.com/yourusername/react-portfolio.git
 
-1. **Repository klonen**
-   ```bash
-   git clone https://github.com/yourusername/react-portfolio.git
