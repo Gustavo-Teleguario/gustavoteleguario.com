@@ -26,12 +26,21 @@ Diese Anleitung hilft dir, eine Kopie des Projekts auf deinem lokalen Rechner zu
 
    ```bash
    git clone https://github.com/yourusername/react-portfolio.git
-   
-```markdown
-2. **In das Projektverzeichnis navigieren**
+   In das Projektverzeichnis navigieren
+bash
 
-   ```bash
-   cd react-portfolio
+cd react-portfolio
 
+Abhängigkeiten installieren
+bash
 
-[View Live](https://www.gustavoteleguario.com)
+npm install
+
+Anwendung ausführen
+bash
+
+    npm start
+
+Live ansehen
+
+Öffne http://localhost:3000 in deinem Browser.
