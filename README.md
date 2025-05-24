@@ -27,11 +27,11 @@ Diese Anleitung hilft dir, eine Kopie des Projekts auf deinem lokalen Rechner zu
    ```bash
    git clone https://github.com/yourusername/react-portfolio.git
    
+```markdown
 2. **In das Projektverzeichnis navigieren**
 
-  ```bash
-cd react-portfolio
-
+   ```bash
+   cd react-portfolio
 
 
 [View Live](https://www.gustavoteleguario.com)
