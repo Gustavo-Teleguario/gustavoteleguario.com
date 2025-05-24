@@ -31,11 +31,13 @@ Diese Anleitung hilft dir, eine Kopie des Projekts auf deinem lokalen Rechner zu
 cd react-portfolio
 
 4. **Abhängigkeiten installieren**
+```bash
 npm install
 
 ### Anwendung ausführen
 
 1. **Entwicklungsserver starten**
+```bash
 npm start
 
 [View Live](https://www.gustavoteleguario.com)
