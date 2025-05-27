@@ -1,8 +1,8 @@
 # 🎨 React Portfolio
 
-A simple portfolio created with React showcasing my art and development projects.
+A simple personal portfolio created with React showcasing my art and development projects.
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 - **public**: Contains static files like images and the HTML template.
 - **src**: Source files for the React application, including components and styles.
