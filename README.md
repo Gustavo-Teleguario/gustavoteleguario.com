@@ -1,8 +1,8 @@
-# React Portfolio
+# 🎨 React Portfolio
 
 A simple portfolio created with React showcasing my art and development projects.
 
-## Project Structure
+## 📁 Project Structure
 
 - **public**: Contains static files like images and the HTML template.
 - **src**: Source files for the React application, including components and styles.
@@ -10,17 +10,19 @@ A simple portfolio created with React showcasing my art and development projects
 - **CNAME**: Configuration for custom domains.
 - **README.md**: Project documentation.
 - **package.json**: Project metadata and dependencies.
+  
+---
 
-## Getting Started
+## 🚀 Getting Started
 
 This guide will help you get a copy of the project up and running on your local machine.
 
-### Prerequisites
+### ✅ Prerequisites
 
 - Node.js (version 14 or higher)
 - npm (Node Package Manager) or Yarn
 
-### Installation
+### 📦 Installation
 
 1. **Clone the repository**
    ```bash
