@@ -1,49 +1,51 @@
 # React Portfolio
 
-Ein einfaches Portfolio, das mit React erstellt wurde und meine Kunst- und Entwicklungsprojekte präsentiert.
+A simple portfolio created with React showcasing my art and development projects.
 
-## Projektstruktur
+## Project Structure
 
-- **public**: Enthält statische Dateien wie Bilder und die HTML-Vorlage.
-- **src**: Quelldateien für die React-Anwendung, einschließlich Komponenten und Stile.
-- **.gitignore**: Gibt absichtlich nicht nachverfolgte Dateien an, die ignoriert werden sollen.
-- **CNAME**: Konfiguration für benutzerdefinierte Domains.
-- **README.md**: Projektdokumentation.
-- **package.json**: Projektmetadaten und Abhängigkeiten.
+- **public**: Contains static files like images and the HTML template.
+- **src**: Source files for the React application, including components and styles.
+- **.gitignore**: Specifies intentionally untracked files to ignore.
+- **CNAME**: Configuration for custom domains.
+- **README.md**: Project documentation.
+- **package.json**: Project metadata and dependencies.
 
-## Erste Schritte
+## Getting Started
 
-Diese Anleitung hilft dir, eine Kopie des Projekts auf deinem lokalen Rechner zum Laufen zu bringen.
+This guide will help you get a copy of the project up and running on your local machine.
 
-### Voraussetzungen
+### Prerequisites
 
-- Node.js (Version 14 oder höher)
-- npm (Node Package Manager) oder Yarn
+- Node.js (version 14 or higher)
+- npm (Node Package Manager) or Yarn
 
 ### Installation
 
-1. **Repository klonen**
+1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/react-portfolio.git
+   ```
 
-2. **In das Projektverzeichnis navigieren**
+2. **Navigate to the project directory**
    ```bash
    cd react-portfolio
+   ```
 
-3. **Abhängigkeiten installieren**
+3. **Install dependencies**
    ```bash
    npm install
-   # oder mit Yarn:
+   # or with Yarn:
    yarn install
+   ```
 
-
-4. **Anwendung starten**
+4. **Start the application**
    ```bash
    npm start
-   # oder mit Yarn:
+   # or with Yarn:
    yarn start
+   ```
+
+5. **View live**
    
-5. **Live ansehen**
-  Nach dem Start des Entwicklungsservers öffne http://localhost:PORT in deinem Browser.
-
-
+   After starting the development server, open http://localhost:PORT in your browser.
