@@ -5,7 +5,7 @@ A simple personal portfolio created with React showcasing my art and development
 ### 📁 Project Structure
 
 - **public**: Contains static files like images and the HTML template.
-- **src**: Source files for the React application, including components and styles.
+- **src**: Source files for the React application, including components, styles.
 - **.gitignore**: Specifies intentionally untracked files to ignore.
 - **CNAME**: Configuration for custom domains.
 - **README.md**: Project documentation.
@@ -26,12 +26,12 @@ This guide will help you get a copy of the project up and running on your local 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/react-portfolio.git
+   git clone https://github.com/yourusername/repository-name.git
    ```
 
 2. **Navigate to the project directory**
    ```bash
-   cd react-portfolio
+   cd repository-name
    ```
 
 3. **Install dependencies**
