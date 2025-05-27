@@ -32,7 +32,7 @@ export const info = {
     socials: [
         {
             link:
-                'https://drive.google.com/file/d/1XJSVRLvs-IJtug-_TGT5xi2ytXQiSLdj/view?usp=sharing',
+                'https://drive.google.com/file/d/1gkIBbUh6j5FOYD9EyQbVDFhaVR_YfVOi/view?usp=sharing',
             icon: 'fa fa-file-pdf-o',
             label: 'CV',
         },
@@ -90,14 +90,14 @@ export const info = {
 
     knowledge: [
         {
-            proficientWith: ['Remote Support', 'Java & C#', 'React & WordPress'],
-            exposedTo: ['Project Management','Front & Back-End', 'AI',],
+            proficientWith: ['Java & C#', 'React & Spring Boot', 'IT-Support'],
+            exposedTo: ['Microservices','Front & Back-End', 'AI'],
             tools: [
                 'Git',
                 'GitHub',
+                'Docker',
                 'Visual Studio Code',
                 'JetBrains IDEs', 'MySQL',
-                'Unreal Engine',
                 'Unity',
                 'Microsoft Office',
             ],
@@ -179,8 +179,8 @@ export const info = {
                     },*/
 
                 {
-                    label: 'psychology',
-                    emoji: '🧠'
+                    label: 'research',
+                    emoji: '🔬'
                 }
             ],
         },

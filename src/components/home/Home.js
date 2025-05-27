@@ -69,7 +69,7 @@ export default function Home() {
                     background: info.gradient,
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent'
-                }}>{info.firstName}</span><span className={Style.hand}>🤚</span>
+                }}>{info.firstName} {info.lastName}!</span>
                 </h1>
                 <h2> {info.position}.</h2>
                 <Box component={'ul'} p={'0.8rem'}>
