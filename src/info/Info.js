@@ -1,24 +1,18 @@
 import self from '../img/self.png'
-
+import GSBild from '../img/GSBild.png'
+import DPBild from '../img/3DPBild.PNG'
+import RePor from '../img/RePor.png'
+import DemBild from '../img/Dem.PNG'
+import FWQuiz from '../img/FWQuiz.png'
+import FApp from '../img/FApp.png'
+import ALIX from '../img/ALeanIX.png'
 import React from 'react'
 
-/* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
-how to make this template work best for you! */
 
 export let colors = ['rgb(0,255,164)', 'rgb(166,104,255)']
 //export let colors = ["#FFFFFF", "#0c7ded"];
 export let colorPortfolioText = ['rgb(7,157,236)']
-/*
-I highly recommend using a gradient generator like https://gradientgenerator.paytonpierce.dev/ to generate a pair of colors that you like.
-These colors will be used to style your name on the homepage, the background of your picture, and some other accents throughout
-the site.
- */
 
-/*
-So let's get started! Some of the info below is pretty self-explanatory, like 'firstName' and 'bio'. I'll try to explain anything
-that might not be obvious right off the bat :) I recommend looking at the template example live using "npm start" to get an idea
-of what each of the values mean.
- */
 
 export const info = {
     firstName: 'Gustavo',
@@ -58,8 +52,6 @@ export const info = {
             label: 'Xing',
         },
 
-        // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-        // Just change the links so that they lead to your social profiles.
     ],
     bio: (
         <p style={{textAlign: 'justify'}}>
@@ -91,7 +83,7 @@ export const info = {
     knowledge: [
         {
             proficientWith: ['Java & C#', 'React & Spring Boot', 'IT-Support'],
-            exposedTo: ['Microservices','Front & Back-End', 'AI'],
+            exposedTo: ['Microservices', 'Front & Back-End', 'AI'],
             tools: [
                 'Git',
                 'GitHub',
@@ -120,10 +112,6 @@ export const info = {
                     label: 'guitar',
                     emoji: '🎸',
                 },
-                /*{
-                    label: 'travel',
-                    emoji: '✈',
-                },*/
                 {
                     label: 'drawing',
                     emoji: '🖍️',
@@ -156,27 +144,11 @@ export const info = {
                     label: 'Technology',
                     emoji: '🤖',
                 },
-                /*{
-                        label: 'Health',
-                        emoji: '🧬'
-                    },*/
-                /* {
-                        label: 'Universe',
-                        emoji: '🌌'
-                    },*/
+
                 {
                     label: 'Languages',
                     emoji: '🗣️',
                 },
-                /* {
-                        label: 'Nature',
-                        emoji: '🌴'
-                    },*/
-
-                /*{
-                        label: 'Animals',
-                        emoji: '🐢'
-                    },*/
 
                 {
                     label: 'research',
@@ -187,7 +159,107 @@ export const info = {
     ],
 
     portfolio: [
-        // This is where your portfolio projects will be detailed
+        {
+            title: 'React Portfolio',
+            source:
+                'https://drive.google.com/file/d/1BLt2yOL3ranKSn_CSH41_49F38kTFHWs/view?usp=sharing',
+            videoLink:
+                'https://www.gustavoteleguario.com',
+
+            mainImage: RePor,
+
+            image: [
+                'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg',
+                'https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg',
+            ],
+            hRef: 'https://unrealengine.com/',
+            bio: (
+                <p>
+
+                </p>
+            ),
+        },
+        {
+            title: 'Fitness App',
+            source:
+                'https://drive.google.com/file/d/1Q0-klKFigFucEM4S95wYB2LrVKT7a21L/view?usp=sharing',
+            videoLink:
+                'https://www.youtube.com/embed/snLHXk3i5zA?si=kOABEDl0GWwQYkg2',
+            mainImage: FApp,
+            image: [
+                'https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg',
+                //java icon
+                'https://www.vectorlogo.zone/logos/java/java-icon.svg',
+            ],
+            hRef: 'https://www.android.com/intl/de_de/',
+            bio: (
+                <p>
+
+                </p>
+            ),
+        },
+        {
+            title: "Firefighter's Quiz App",
+            //live: "https://github.com/Gustavo-Teleguario",
+            source: 'https://github.com/Gustavo-Teleguario/Firefighter-Quiz-App',
+            videoLink:
+                'https://www.youtube.com/embed/I9yv1PGS5v0?si=87nby1uqL4sBe2sM',
+            mainImage: FWQuiz,
+            image: [
+                'https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg',
+                'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg',
+            ],
+            hRef: 'https://unity.com/',
+            bio: (
+                <p>
+
+                </p>
+            ),
+        },
+
+        {
+            title: 'Demonstrator',
+            source:
+                'https://github.com/Gustavo-Teleguario',
+            videoLink:
+                'https://www.youtube.com/@gustavoteleguario',
+            mainImage: DemBild,
+            image: [
+                //react icon
+                'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg',
+                //javascript icon
+                'https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg',
+                //icon java
+                'https://www.vectorlogo.zone/logos/java/java-icon.svg',
+            ],
+
+            hRef: 'https://unrealengine.com/',
+            bio: (
+                <p>
+
+                </p>
+            ),
+        },
+        {
+            title: '3D Interior Car',
+            source:
+                'https://drive.google.com/file/d/1BLt2yOL3ranKSn_CSH41_49F38kTFHWs/view?usp=sharing',
+            videoLink:
+                'https://www.youtube.com/embed/93BKsyBjQG4?si=JXUMDpPBZ_tqNb23',
+            mainImage: DPBild,
+            image: [
+
+                'https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg',
+                'https://www.vectorlogo.zone/logos/blender/blender-icon.svg',
+            ],
+            hRef: 'https://unrealengine.com/',
+            bio: (
+                <p>
+
+                </p>
+            ),
+        },
+
         {
             title: 'Dose rate meter with Teletector',
             //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
@@ -195,71 +267,20 @@ export const info = {
                 'https://drive.google.com/file/d/1BLt2yOL3ranKSn_CSH41_49F38kTFHWs/view?usp=sharing', // this should be a link to the **repository** of the project, where the code is hosted.
             videoLink:
                 'https://www.youtube.com/embed/93BKsyBjQG4?si=JXUMDpPBZ_tqNb23',
-            image:
+            mainImage: GSBild,
+            image: [
                 'https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg',
+                'https://www.vectorlogo.zone/logos/blender/blender-icon.svg',
+            ],
+
             hRef: 'https://unrealengine.com/',
             bio: (
                 <p>
-                    As part of a university project I developed a computer graphics
-                    simulation using Unreal Engine as the foundation. The project's
-                    primary objective was to create a graphical simulation of a
-                    non-existing device, a Dose rate Meter Device with Teletector,
-                    designed to detect photon radiation in various scenarios such as
-                    X-rays radiation, Tube radio, gamma radiation, non-ionizing radiation,
-                    alpha, and beta radiation. To achieve this, I utilized Blender to
-                    create the necessary 3D models. The simulation aimed to provide
-                    viewers with an immersive experience, allowing them to learn about the
-                    appearance and functionality of such a device. Through this project,
-                    users could gain valuable insights into the use and importance of Dose
-                    rate meter tools in various radiation detection scenarios
+
                 </p>
             ),
         },
-        {
-            title: "Firefighter's Quiz",
-            //live: "https://github.com/Gustavo-Teleguario",
-            source: 'https://gitlab.com/Gustavo-Teleguario/abschlussprojektimw',
-            videoLink:
-                'https://www.youtube.com/embed/I9yv1PGS5v0?si=87nby1uqL4sBe2sM',
-            image: 'https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg',
-            hRef: 'https://unity.com/',
-            bio: (
-                <p>
-                    As part of a university project, I developed a computer graphics
-                    project at university using Unity and C# as the primary tools. The
-                    project's main objective was to create a quiz app for smartphones that
-                    incorporated essential 3D elements. Specifically, the project aimed to
-                    develop a firefighting quiz focusing on extinguishing agents and
-                    procedures in a 3D environment. Users were presented with various 3D
-                    fire scenarios and related quiz questions, enhancing their
-                    understanding of firefighting processes. This interactive approach
-                    provided users with valuable insights into fire extinguishing methods
-                    and techniques
-                </p>
-            ),
-        },
-        {
-            title: 'Context Awarenes -Fitness App',
-            //live: "https://github.com/Gustavo-Teleguario", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-            source:
-                'https://drive.google.com/file/d/1Q0-klKFigFucEM4S95wYB2LrVKT7a21L/view?usp=sharing', // this should be a link to the **repository** of the project, where the code is hosted.
-            videoLink:
-                'https://www.youtube.com/embed/snLHXk3i5zA?si=kOABEDl0GWwQYkg2',
-            image:
-                'https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg',
-            hRef: 'https://www.android.com/intl/de_de/',
-            bio: (
-                <p>
-                    As part of a university project, I developed an Android app with Java
-                    for smartphones. This app had two main tasks: running sessions and
-                    counting pull-ups. The app included important features such as user
-                    authentication, a user-friendly home, real-time geolocation for
-                    accurate step counting for running, and a workout results. It provided
-                    users with a new experience for tracking their fitness activities and
-                    progress.
-                </p>
-            ),
-        },
+
         {
             title: 'Custom Report SAP-LeanIX',
             //live: "https://github.com/Gustavo-Teleguario",
@@ -267,18 +288,18 @@ export const info = {
                 'https://github.com/Gustavo-Teleguario/Network-Graph-Custom-Report-',
             videoLink:
                 'https://www.youtube.com/embed/vxghGxuAWac?si=O1RY_O2JI0MOjze-',
-            image: 'https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg',
+            mainImage: ALIX,
+            image: [
+                'https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg',
+                'https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg',
+                //html icon
+
+                'https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg',
+            ],
             hRef: 'https://vuejs.org/',
             bio: (
                 <p>
-                    Custom reports are a great way for analyzing and communicating
-                    Enterprise Architecture insights of some organization in an effective
-                    way. This small custom report aims to show the relationships that
-                    exist within some LeanIX Meta Model or Fact Sheet types, such as
-                    Application and their respective subtypes or another Fact Sheet type.
-                    In some cases, it can be a bit complex to visualize these
-                    relationships, Therefore, this custom report was created in a graph
-                    format to facilitate visualization of these connection.
+
                 </p>
             ),
         },
