@@ -1,18 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.5b26eedf.css",
-    "main.js": "/static/js/main.55d73827.js",
+    "main.js": "/static/js/main.e99cc365.js",
     "static/media/background.jpg": "/static/media/background.2c6fd32e6f41ca9ddcba.jpg",
     "static/media/self.png": "/static/media/self.ed6ee420c2612c064764.png",
-    "static/media/Mock-Up-Dem-tra.PNG": "/static/media/Mock-Up-Dem-tra.4ce7ad502894b52bad66.PNG",
-    "static/media/3D-ModellingTransparent.PNG": "/static/media/3D-ModellingTransparent.0c11894de7f25a1fc06f.PNG",
-    "static/media/Mock-tra.png": "/static/media/Mock-tra.2382ab4d5d7176ba9b3a.png",
+    "static/media/FWQuiz.png": "/static/media/FWQuiz.be7e2a22b9763eb9b8d4.png",
+    "static/media/Dem.PNG": "/static/media/Dem.4ce7ad502894b52bad66.PNG",
+    "static/media/GSBild.png": "/static/media/GSBild.bd14773f9d6d42ea95e3.png",
+    "static/media/FApp.png": "/static/media/FApp.fdd6ffda4cb53a8836da.png",
+    "static/media/3DPBild.PNG": "/static/media/3DPBild.0c11894de7f25a1fc06f.PNG",
+    "static/media/ALeanIX.png": "/static/media/ALeanIX.2ac65a9f64f3ecaf2a73.png",
+    "static/media/RePor.png": "/static/media/RePor.2382ab4d5d7176ba9b3a.png",
     "index.html": "/index.html",
     "main.5b26eedf.css.map": "/static/css/main.5b26eedf.css.map",
-    "main.55d73827.js.map": "/static/js/main.55d73827.js.map"
+    "main.e99cc365.js.map": "/static/js/main.e99cc365.js.map"
   },
   "entrypoints": [
     "static/css/main.5b26eedf.css",
-    "static/js/main.55d73827.js"
+    "static/js/main.e99cc365.js"
   ]
 }
