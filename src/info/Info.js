@@ -162,7 +162,7 @@ export const info = {
         {
             title: 'React Portfolio',
             source:
-                'https://drive.google.com/file/d/1BLt2yOL3ranKSn_CSH41_49F38kTFHWs/view?usp=sharing',
+                'https://github.com/Gustavo-Teleguario/gustavoteleguario.com/tree/main',
             videoLink:
                 'https://www.gustavoteleguario.com',
 
