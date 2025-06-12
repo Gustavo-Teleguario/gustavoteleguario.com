@@ -1,36 +1,25 @@
 .art-gallery-container {
     display: flex;
-    flex-wrap: wrap; /* Ermöglicht das Umbrechen von Elementen */
-    justify-content: center; /* Zentriert die Elemente horizontal */
-    background: url('/public/images/background.jpg') no-repeat center center; /* Add your background image */
-    background-size: cover; /* Ensure the background covers the entire container */
-    transform: rotate(360deg); /* Rotate the container */
-    height: 1400px;
-    padding: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    padding: 0;
+    background: none;
 }
 
 .art-item {
-    width: 300px; /* Beispielbreite für ein Kunstwerk */
+    width: 200px;
     margin: 10px;
-    /* Weitere Stile für die einzelnen Kunstwerke */
 }
 
 @media (max-width: 768px) {
     .art-item {
-        width: 45%; /* Breite für Tablets */
+        width: 40%;
     }
 }
 
 @media (max-width: 480px) {
     .art-item {
-        width: 100%; /* Volle Breite für Mobilgeräte */
-    }
-}
-
-/* Additional styles for responsive background */
-@media (max-width: 768px) {
-    .art-gallery-container {
-        background-size: contain; /* Adjust background size for smaller screens */
-        background-repeat: repeat; /* Repeat the background image */
+        width: 90%;
     }
 }

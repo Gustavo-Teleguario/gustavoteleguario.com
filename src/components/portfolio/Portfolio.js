@@ -6,7 +6,7 @@ import {info} from "../../info/Info";
 
 export default function Portfolio() {
     return (
-        <Box marginTop={'5em'} maxHeight={'400vh'}>
+        <Box marginTop={'1em'} maxHeight={'400vh'}>
 
             <Box sx={{width: {xs: '90%', md: '80%'}, textAlign: 'center', margin: '0 auto'}}>
                 <Typography variant="h3" gutterBottom style={{color: info.baseColorText}}

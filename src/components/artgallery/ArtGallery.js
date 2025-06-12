@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css';
-import {Box, Typography} from '@mui/material';
+import {Box, Typography, Divider, Grid} from '@mui/material';
 import albums from '../../data/albums.json';
+import {info} from '../../info/Info';
 import './ArtGallery.css';
-
 
 const ArtGallery = () => {
     const [photoIndex, setPhotoIndex] = useState(0);
@@ -17,69 +17,54 @@ const ArtGallery = () => {
         setIsOpen(true);
     };
 
-
     return (
-        <Box className="art-gallery-container" sx={{padding: {xs: '1em', md: '8em'}}}>
-            <Typography variant="h3" gutterBottom sx={{color: '#71d2e4', fontSize: {xs: '2rem', md: '3rem'}}}>
-                Where Computer Science Meets Creativity
-            </Typography>
-            <Typography variant="body1" gutterBottom sx={{
-                fontSize: {xs: '1rem', md: '1.5rem'},
-                textAlign: 'justify',
-                color: 'white',
-                width: '100%'
-            }}>
-
-                Welcome and thank you for visiting my "Art Gallery" portfolio. In this section, you'll discover my
-                drawings and oil paintings that showcase my artistic journey. While pursuing my studies in computer
-                science, creativity and art have remained my passionate companions. I cherish the moments I spend
-                painting and drawing in my free time—it's truly a passion I deeply enjoy.
-                My artistic endeavors reveal my exceptional eye for detail and my love for creative expression. This
-                natural inclination toward visual precision and creativity is precisely why I deliberately chose
-                Computer Graphics as my elective specialization in my Informatics studies. Through both traditional art
-                and digital design, I explore the beautiful intersection between technical precision and artistic
-                freedom.
-                Each piece in this collection represents not just an artwork, but a moment where technical understanding
-                enhances artistic vision—where the analytical mind of a computer scientist meets the soul of an artist.
-            </Typography>
-            <Box
-                sx={{
-                    display: 'grid',
-                    gridTemplateColumns: {
-                        xs: 'repeat(auto-fill, minmax(150px, 1fr))',
-                        md: 'repeat(auto-fill, minmax(300px, 1fr))'
-                    },
-                    gap: '4rem',
-                    rowGap: '6rem',
-                    justifyItems: 'center',
-                    width: '100%',
-                    maxWidth: '1200px',
-                }}
-            >
-                {albums.map((album, albumIndex) => (
-                    <Box key={albumIndex}
-                         sx={{cursor: 'pointer', width: '100%', height: {xs: '150px', md: '300px'}, color: 'white'}}>
-                        <Typography
-                            variant="h5"
-                            align="center"
-                            sx={{
-                                marginBottom: '2rem',
-                                color: '#9fe1f4',
-                                fontFamily: 'Roboto, sans-serif',
-                                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-                                letterSpacing: '2px',
-                                fontSize: {xs: '1rem', md: '1.5rem'}
-                            }}
-                        >
-                            {album.title}
-                        </Typography>
-                        <Box onClick={() => openLightbox(album.images, 0)} sx={{height: '100%'}}>
-                            <img src={album.images[0].imgSrc} alt={album.title}
-                                 style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '10px'}}/>
-                        </Box>
-                    </Box>
-                ))}
+        <Box marginTop={'1em'} maxHeight={'400vh'} display={'flex'} flexDirection={'column'} alignItems={'center'}>
+            <Box sx={{width: {xs: '90%', md: '80%'}, textAlign: 'center', margin: '0 auto'}}>
+                <Typography variant="h3" gutterBottom sx={{color: info.baseColorText, fontSize: {xs: '2rem', md: '3rem'}}}>
+                    Where Ideas Take Form
+                </Typography>
+                <Divider sx={{
+                    borderBottomWidth: '2px',
+                    borderColor: info.baseColorText,
+                    margin: '1em 0'
+                }}/>
+                <Typography variant="body1" gutterBottom
+                            sx={{fontSize: {xs: '1rem', md: '1.5rem'}, textAlign: 'justify' }}>
+                    "Welcome to my 'Art Gallery.' Here, I showcase my drawings and paintings, many of which were paid
+                    commissions through my hobbies that helped finance my studies. These works demonstrate my discipline,
+                    my drawing talent with an exceptional eye for detail, and my ability to execute projects from start to finish."
+                </Typography>
             </Box>
+            <Divider sx={{
+                marginY: '2em', width: '80%', marginX: 'auto', borderBottomWidth: '2px',
+                borderColor: info.baseColorText,
+            }}/>
+            <Grid container spacing={2} justifyContent={'center'} sx={{width: {xs: '100%', sm: '90%', md: '80%'}}}>
+                {albums.map((album, albumIndex) => (
+                    <Grid item xs={12} sm={6} md={4} lg={3} key={albumIndex}>
+                        <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
+                            <Typography
+                                variant="h5"
+                                align="center"
+                                sx={{
+                                    marginBottom: '1rem',
+                                    color: info.baseColorText,
+                                    fontFamily: 'Roboto, sans-serif',
+                                    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+                                    letterSpacing: '1px',
+                                    fontSize: {xs: '1rem', md: '1.5rem'}
+                                }}
+                            >
+                                {album.title}
+                            </Typography>
+                            <Box onClick={() => openLightbox(album.images, 0)} sx={{width: '100%', height: {xs: '120px', sm: '150px', md: '200px'}}}>
+                                <img src={album.images[0].imgSrc} alt={album.title}
+                                     style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '10px'}}/>
+                            </Box>
+                        </Box>
+                    </Grid>
+                ))}
+            </Grid>
 
             {isOpen && (
                 <Lightbox
