@@ -23,3 +23,17 @@
         width: 90%;
     }
 }
+
+.gallery-item-clickable {
+    cursor: url('../../img/lapiz.png') 16 16, auto;
+}
+
+.gallery-item-clickable:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 0.2s ease-in-out;
+}
+
+.gallery-item-clickable img {
+    display: block;
+}

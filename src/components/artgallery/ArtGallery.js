@@ -30,9 +30,9 @@ const ArtGallery = () => {
                 }}/>
                 <Typography variant="body1" gutterBottom
                             sx={{fontSize: {xs: '1rem', md: '1.5rem'}, textAlign: 'justify' }}>
-                    "Welcome to my 'Art Gallery.' Here, I showcase my drawings and paintings, many of which were paid
+                    Welcome to my Art Gallery. Here, I showcase my drawings and paintings, many of which were paid
                     commissions through my hobbies that helped finance my studies. These works demonstrate my discipline,
-                    my drawing talent with an exceptional eye for detail, and my ability to execute projects from start to finish."
+                    my drawing talent with an exceptional eye for detail, and my ability to execute projects from start to finish.
                 </Typography>
             </Box>
             <Divider sx={{
@@ -57,7 +57,11 @@ const ArtGallery = () => {
                             >
                                 {album.title}
                             </Typography>
-                            <Box onClick={() => openLightbox(album.images, 0)} sx={{width: '100%', height: {xs: '120px', sm: '150px', md: '200px'}}}>
+                            <Box
+                                onClick={() => openLightbox(album.images, 0)}
+                                sx={{width: '100%', height: {xs: '120px', sm: '150px', md: '200px'}}}
+                                className="gallery-item-clickable"
+                            >
                                 <img src={album.images[0].imgSrc} alt={album.title}
                                      style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '10px'}}/>
                             </Box>
