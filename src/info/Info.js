@@ -26,7 +26,7 @@ export const info = {
     socials: [
         {
             link:
-                'https://drive.google.com/file/d/1gkIBbUh6j5FOYD9EyQbVDFhaVR_YfVOi/view?usp=sharing',
+                'https://drive.google.com/file/d/1qKSnPBnXYYNUjmOJtVTkOw99A5Sg1mBp/view?usp=sharing',
             icon: 'fa fa-file-pdf-o',
             label: 'CV',
         },
@@ -56,7 +56,7 @@ export const info = {
     bio: (
         <p style={{textAlign: 'justify'}}>
             {' '}
-            <strong>"Hello World" </strong> name is Gustavo and I come from{' '}
+            <strong>"Hello World" </strong> my name is Gustavo and I come from{' '}
             <a
                 href={
                     'https://www.google.com/maps/place/Guatemala/@15.7228485,-90.2348,7z/data=!3m1!4b1!4m6!3m5!1s0x8588135036e7506b:0x35982b375b84d5bb!8m2!3d15.783471!4d-90.230759!16zL20vMDM0NV8?entry=ttu'
@@ -64,8 +64,11 @@ export const info = {
             >
                 Guatemala,{' '} Central America.
             </a>
-            I currently work in forensic psychiatric care in Lower Saxony – a field that uniquely combines my diverse
-            competencies and fulfills me daily.
+            I'm currently training as a professional nurse at a forensic psychiatric facility in Lower Saxony,
+            a path that perfectly combines my diverse competencies and fulfills me daily.
+            <p style={{textAlign: 'justify'}}><strong>My Journey: </strong>
+                My path led me from computer science to healthcare, driven by my fascination for human psychology and the desire to work directly with people.
+                The analytical and systematic skills from my studies now help me approach complex care situations with both professionalism and empathy. </p>
             <p style={{textAlign: 'justify'}}><strong>What defines me: </strong>
                 Strong social competence forms the foundation of my daily work. As a personable individual with
                 pronounced
@@ -84,14 +87,7 @@ export const info = {
                 </ul>
 
             </p>
-            <p style={{textAlign: 'justify'}}>
-                <strong>My work philosophy </strong>
-                <p>The soft skills from computer science – structured procedures, systematic problem-solving, and
-                    methodical
-                    thinking – have become valuable tools in my current work, enabling both professional and empathetic
-                    care.
-                </p>
-            </p>
+
             <p style={{textAlign: 'justify'}}>
                 <strong>My mission:</strong> To leave a positive mark in this field through authentic work, genuine
                 human connections,
