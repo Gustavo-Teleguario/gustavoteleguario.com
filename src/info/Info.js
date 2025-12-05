@@ -67,18 +67,19 @@ export const info = {
             I'm currently training as a professional nurse at a forensic psychiatric facility in Lower Saxony,
             a path that perfectly combines my diverse competencies and fulfills me daily.
             <p style={{textAlign: 'justify'}}><strong>My Journey: </strong>
-                My path led me from computer science to healthcare, driven by my fascination for human psychology and the desire to work directly with people.
-                The analytical and systematic skills from my studies now help me approach complex care situations with both professionalism and empathy. </p>
+                My path led me from computer science to healthcare, driven by my fascination for human psychology and
+                the desire to work directly with people.
+                The analytical and systematic skills from my studies now help me approach complex care situations with
+                both professionalism and empathy. </p>
             <p style={{textAlign: 'justify'}}><strong>What defines me: </strong>
-                Strong social competence forms the foundation of my daily work. As a personable individual with
-                pronounced
-                empathy, I maintain human connection even in challenging situations.</p>
+                In my daily work, I rely on strong social skills and professional conduct.
+                I remain empathetic and approachable, ensuring human connection even under difficult circumstances.</p>
 
             <p style={{textAlign: 'justify'}}><strong>Multilingual abilities:</strong> I speak fluent German, English,
                 and Spanish (native), enabling me to
                 reach people from diverse cultural backgrounds.</p>
             <p style={{textAlign: 'justify'}}>
-                <strong> Refined soft skills from my studies</strong>
+                <strong> Refined soft skills</strong>
                 <ul>
                     <li>Solution-oriented thinking – finding creative paths where others see limits</li>
                     <li> Self-motivation – staying focused in challenging situations</li>
@@ -87,21 +88,13 @@ export const info = {
                 </ul>
 
             </p>
-
-            <p style={{textAlign: 'justify'}}>
-                <strong>My mission:</strong> To leave a positive mark in this field through authentic work, genuine
-                human connections,
-                and
-                the courage to follow my own path.
-            </p>
-
         </p>
 
     ),
 
     knowledge: [
         {
-            proficientWith: ['Java & C#', 'React & Spring Boot', 'IT-Support'],
+            proficientWith: ['Java & C#', 'React', 'IT-Support'],
             exposedTo: ['Microservices', 'Front & Back-End', 'AI'],
             tools: [
                 'Git',
@@ -139,34 +132,32 @@ export const info = {
 
             skills: [
                 {
-                    label: 'programming',
-                    emoji: '👨‍💻',
+                    label: 'Social Competence',
+                    emoji: '🤝',
+                },
+                {
+                    label: 'German, English, Spanish',
+                    emoji: '📢',
                 },
                 {
                     label: 'IT-Support',
                     emoji: '🖥️',
                 },
-
                 {
-                    label: 'Spanish, German ,English',
-                    emoji: '📢',
-                },
-                {
-                    label: 'Social Competence',
-                    emoji: '🤝',
+                    label: 'programming',
+                    emoji: '👨‍💻',
                 },
 
             ],
 
             interest: [
                 {
+                    label: 'Forensic Psychiatry',
+                    emoji: '🗣️',
+                },
+                {
                     label: 'Technology',
                     emoji: '🤖',
-                },
-
-                {
-                    label: 'Languages',
-                    emoji: '🗣️',
                 },
 
                 {
