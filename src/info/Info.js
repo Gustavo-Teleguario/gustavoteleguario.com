@@ -1,4 +1,4 @@
-import self from '../img/self.png'
+import self from '../img/self.jpg'
 import GSBild from '../img/GSBild.png'
 import DPBild from '../img/3DPBild.PNG'
 import RePor from '../img/RePor.png'
@@ -26,7 +26,7 @@ export const info = {
     socials: [
         {
             link:
-                'https://drive.google.com/file/d/1qKSnPBnXYYNUjmOJtVTkOw99A5Sg1mBp/view?usp=sharing',
+                'https://drive.google.com/file/d/1Cuq7RWg5XexGCX9Gx5XR4M-akVBfslN9/view?usp=sharing',
             icon: 'fa fa-file-pdf-o',
             label: 'CV',
         },

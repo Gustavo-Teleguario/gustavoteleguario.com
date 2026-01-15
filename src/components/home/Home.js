@@ -1,6 +1,6 @@
 import React from 'react';
 import Style from './Home.module.scss';
-import me from '../../img/self.png';
+import me from '../../img/self.jpg';
 import classNames from 'classnames';
 import SocialIcon from "./SocialIcon";
 import {Box, Typography} from "@mui/material";
