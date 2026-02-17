@@ -8,8 +8,8 @@ import {info} from "../../info/Info";
 import TypewriterEffect from './TypewriterEffect';
 
 export default function Home() {
-    const elevatorPitch = "A person with a strong background who has turned every obstacle into an opportunity for growth. As a passionate software developer, I bring strong problem-solving skills, " +
-        "team spirit, self-motivation, and a high level of adaptability. I communicate confidently in English, German, and Spanish – and thrive on every challenge.";
+    const elevatorPitch = "I never give up — I grow. Currently doing my Nursing Apprenticeship, I bring problem-solving skills, team spirit, and self-motivation to everything I do. Healthcare challenges me every day —" +
+        " and that's exactly where I thrive. Living abroad shaped me into a confident communicator, fluent in English, German, and Spanish.";
 
     return (
         <Box

@@ -17,7 +17,7 @@ export let colorPortfolioText = ['rgb(7,157,236)']
 export const info = {
     firstName: 'Gustavo',
     lastName: 'Teleguario',
-    position: 'IT Specialist – Application Development',
+    position: 'Tech Background · Nursing Apprentice',
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
     gradient: `-webkit-linear-gradient(135deg, ${colors[1]}, ${colors[0]}, ${colors[1]})`, // don't change this either
     baseColor: colors[0],
