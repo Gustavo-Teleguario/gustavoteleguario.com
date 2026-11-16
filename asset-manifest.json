@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.784f0d2f.css",
-    "main.js": "/static/js/main.feb64258.js",
-    "static/media/FWQuiz.png": "/static/media/FWQuiz.be7e2a22b9763eb9b8d4.png",
-    "static/media/Dem.PNG": "/static/media/Dem.4ce7ad502894b52bad66.PNG",
-    "static/media/GSBild.png": "/static/media/GSBild.bd14773f9d6d42ea95e3.png",
-    "static/media/FApp.png": "/static/media/FApp.fdd6ffda4cb53a8836da.png",
-    "static/media/3DPBild.PNG": "/static/media/3DPBild.0c11894de7f25a1fc06f.PNG",
-    "static/media/ALeanIX.png": "/static/media/ALeanIX.2ac65a9f64f3ecaf2a73.png",
-    "static/media/RePor.png": "/static/media/RePor.2382ab4d5d7176ba9b3a.png",
-    "static/media/self.jpg": "/static/media/self.a6c1eb298b3bfc183ccb.jpg",
-    "index.html": "/index.html",
-    "main.784f0d2f.css.map": "/static/css/main.784f0d2f.css.map",
-    "main.feb64258.js.map": "/static/js/main.feb64258.js.map"
+    "main.css": "/gustavoteleguario.com/static/css/main.784f0d2f.css",
+    "main.js": "/gustavoteleguario.com/static/js/main.08bd6b18.js",
+    "static/media/self.jpg": "/gustavoteleguario.com/static/media/self.8f7661ec28ce73947abc.jpg",
+    "static/media/FWQuiz.png": "/gustavoteleguario.com/static/media/FWQuiz.be7e2a22b9763eb9b8d4.png",
+    "static/media/Dem.PNG": "/gustavoteleguario.com/static/media/Dem.4ce7ad502894b52bad66.PNG",
+    "static/media/GSBild.png": "/gustavoteleguario.com/static/media/GSBild.bd14773f9d6d42ea95e3.png",
+    "static/media/FApp.png": "/gustavoteleguario.com/static/media/FApp.fdd6ffda4cb53a8836da.png",
+    "static/media/3DPBild.PNG": "/gustavoteleguario.com/static/media/3DPBild.0c11894de7f25a1fc06f.PNG",
+    "static/media/ALeanIX.png": "/gustavoteleguario.com/static/media/ALeanIX.2ac65a9f64f3ecaf2a73.png",
+    "static/media/RePor.png": "/gustavoteleguario.com/static/media/RePor.2382ab4d5d7176ba9b3a.png",
+    "index.html": "/gustavoteleguario.com/index.html",
+    "main.784f0d2f.css.map": "/gustavoteleguario.com/static/css/main.784f0d2f.css.map",
+    "main.08bd6b18.js.map": "/gustavoteleguario.com/static/js/main.08bd6b18.js.map"
   },
   "entrypoints": [
     "static/css/main.784f0d2f.css",
-    "static/js/main.feb64258.js"
+    "static/js/main.08bd6b18.js"
   ]
 }
